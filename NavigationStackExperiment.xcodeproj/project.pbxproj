@@ -20,6 +20,9 @@
 		739CDE172BA1E27A0059AF68 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE162BA1E27A0059AF68 /* EditButton.swift */; };
 		739CDE192BA1E3840059AF68 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE182BA1E3840059AF68 /* PostRow.swift */; };
 		739CDE1B2BA1E4F00059AF68 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1A2BA1E4F00059AF68 /* PostsListView.swift */; };
+		739CDE1D2BA1E77A0059AF68 /* FollowersModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */; };
+		739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1E2BA1E82B0059AF68 /* UserRow.swift */; };
+		739CDE222BA1E91D0059AF68 /* FollowingModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		739CDE162BA1E27A0059AF68 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		739CDE182BA1E3840059AF68 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
 		739CDE1A2BA1E4F00059AF68 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersModuleView.swift; sourceTree = "<group>"; };
+		739CDE1E2BA1E82B0059AF68 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 		739CDE052BA1D7E40059AF68 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				739CDE232BA1E9BB0059AF68 /* Followers */,
+				739CDE242BA1E9C30059AF68 /* Following */,
 				739CDE0A2BA1D9C20059AF68 /* Profile */,
 			);
 			path = Modules;
@@ -120,10 +128,27 @@
 				739CDE142BA1E0D30059AF68 /* FollowCountView.swift */,
 				739CDE102BA1DBDC0059AF68 /* HeaderView.swift */,
 				739CDE122BA1DEB80059AF68 /* InfoView.swift */,
-				739CDE1A2BA1E4F00059AF68 /* PostsListView.swift */,
 				739CDE182BA1E3840059AF68 /* PostRow.swift */,
+				739CDE1A2BA1E4F00059AF68 /* PostsListView.swift */,
+				739CDE1E2BA1E82B0059AF68 /* UserRow.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		739CDE232BA1E9BB0059AF68 /* Followers */ = {
+			isa = PBXGroup;
+			children = (
+				739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */,
+			);
+			path = Followers;
+			sourceTree = "<group>";
+		};
+		739CDE242BA1E9C30059AF68 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */,
+			);
+			path = Following;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,11 +226,14 @@
 				739CDE192BA1E3840059AF68 /* PostRow.swift in Sources */,
 				739CDE112BA1DBDC0059AF68 /* HeaderView.swift in Sources */,
 				739CDE0E2BA1D9F30059AF68 /* ProfileModuleModel.swift in Sources */,
+				739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */,
 				739CDE1B2BA1E4F00059AF68 /* PostsListView.swift in Sources */,
 				739CDDF72BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift in Sources */,
 				739CDE0C2BA1D9E60059AF68 /* ProfileModuleViewModel.swift in Sources */,
 				739CDE072BA1D8130059AF68 /* User.swift in Sources */,
 				739CDE132BA1DEB80059AF68 /* InfoView.swift in Sources */,
+				739CDE1D2BA1E77A0059AF68 /* FollowersModuleView.swift in Sources */,
+				739CDE222BA1E91D0059AF68 /* FollowingModuleView.swift in Sources */,
 				739CDE152BA1E0D30059AF68 /* FollowCountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct PostRow: View {
+struct UserRow: View {
+    let user: User
+
     var body: some View {
         ZStack {
             backgroundView
@@ -17,7 +19,7 @@ struct PostRow: View {
 
     private var contentView: some View {
         HStack(spacing: 20) {
-            Image(systemName: "pencil")
+            Image(systemName: "person")
                 .font(.system(size: 30))
                 .frame(width: 60, height: 60)
                 .foregroundStyle(.purple)
@@ -27,10 +29,10 @@ struct PostRow: View {
                 }
 
             VStack(alignment: .leading) {
-                Text("Mock Post")
+                Text(user.displayName)
                     .bold()
 
-                Text("Mock context")
+                Text(user.userName)
                     .font(.subheadline)
                     .foregroundStyle(.gray)
             }

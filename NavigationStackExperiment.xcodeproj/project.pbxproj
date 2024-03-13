@@ -23,6 +23,7 @@
 		739CDE1D2BA1E77A0059AF68 /* FollowersModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */; };
 		739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1E2BA1E82B0059AF68 /* UserRow.swift */; };
 		739CDE222BA1E91D0059AF68 /* FollowingModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */; };
+		739CDE262BA1EB5E0059AF68 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE252BA1EB5E0059AF68 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersModuleView.swift; sourceTree = "<group>"; };
 		739CDE1E2BA1E82B0059AF68 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModuleView.swift; sourceTree = "<group>"; };
+		739CDE252BA1EB5E0059AF68 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		739CDE042BA1D7DD0059AF68 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				739CDE252BA1EB5E0059AF68 /* Route.swift */,
 				739CDE062BA1D8130059AF68 /* User.swift */,
 			);
 			path = Models;
@@ -224,6 +227,7 @@
 				739CDDF92BA1D6EB0059AF68 /* ProfileModuleView.swift in Sources */,
 				739CDE172BA1E27A0059AF68 /* EditButton.swift in Sources */,
 				739CDE192BA1E3840059AF68 /* PostRow.swift in Sources */,
+				739CDE262BA1EB5E0059AF68 /* Route.swift in Sources */,
 				739CDE112BA1DBDC0059AF68 /* HeaderView.swift in Sources */,
 				739CDE0E2BA1D9F30059AF68 /* ProfileModuleModel.swift in Sources */,
 				739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */,

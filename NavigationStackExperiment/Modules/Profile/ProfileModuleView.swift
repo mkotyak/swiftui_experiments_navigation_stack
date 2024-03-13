@@ -8,15 +8,27 @@ struct ProfileModuleView: View {
     }
 
     var body: some View {
-        VStack {
-            HeaderView(displayName: viewModel.displayName)
-            InfoView()
-            FollowCountView(
-                followersCount: viewModel.followersCount,
-                followingCount: viewModel.followingCount
-            )
-            EditButton()
-            PostsListView()
+        NavigationStack(path: $viewModel.path) {
+            VStack {
+                HeaderView(displayName: viewModel.displayName)
+                InfoView()
+                FollowCountView(
+                    followersCount: viewModel.followersCount,
+                    followingCount: viewModel.followingCount
+                )
+                EditButton()
+                PostsListView()
+            }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case .followers:
+                    FollowersModuleView(followers: viewModel.followers)
+                case .following:
+                    FollowingModuleView(following: viewModel.following)
+                }
+            }
         }
     }
 }

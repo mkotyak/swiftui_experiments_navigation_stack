@@ -15,16 +15,22 @@ struct FollowCountView: View {
     }
 
     private var followersCountView: some View {
-        VStack {
-            Text("\(followersCount)")
-            Text("Followers")
+        NavigationLink(value: Route.followers) {
+            VStack {
+                Text("\(followersCount)")
+                Text("Followers")
+            }
+            .foregroundStyle(.black)
         }
     }
 
     private var followingCountView: some View {
-        VStack {
-            Text("\(followersCount)")
-            Text("Following")
+        NavigationLink(value: Route.following) {
+            VStack {
+                Text("\(followersCount)")
+                Text("Following")
+            }
+            .foregroundStyle(.black)
         }
     }
 }

@@ -1,18 +1,28 @@
 import Foundation
+import SwiftUI
 
 class ProfileModuleViewModel: ObservableObject {
     @Published var model: ProfileModuleModel
+    @Published var path: NavigationPath = .init()
     
     var displayName: String {
         model.user.displayName
     }
     
+    var followers: [User] {
+        model.user.followers
+    }
+    
+    var following: [User] {
+        model.user.following
+    }
+    
     var followersCount: Int {
-        model.user.followers.count
+        followers.count
     }
     
     var followingCount: Int {
-        model.user.following.count
+        following.count
     }
     
     init(model: ProfileModuleModel) {

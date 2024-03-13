@@ -12,5 +12,6 @@ struct FollowingModuleView: View {
             }
             .padding(.top)
         }
+        .navigationTitle("Following")
     }
 }

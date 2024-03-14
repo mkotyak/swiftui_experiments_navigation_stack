@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FollowersModuleView: View {
+    @Binding var path: NavigationPath
     let followers: [User]
 
     var body: some View {
@@ -15,5 +16,15 @@ struct FollowersModuleView: View {
             .padding(.top)
         }
         .navigationTitle("Followers")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    path = .init()
+                } label: {
+                    Image(systemName: "house")
+                        .resizable()
+                }
+            }
+        }
     }
 }

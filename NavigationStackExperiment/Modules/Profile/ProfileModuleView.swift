@@ -24,9 +24,9 @@ struct ProfileModuleView: View {
             .navigationDestination(for: Route.self) { route in
                 switch route {
                 case let .followers(followers):
-                    FollowersModuleView(followers: followers)
+                    FollowersModuleView(path: $viewModel.path, followers: followers)
                 case let .following(following):
-                    FollowingModuleView(following: following)
+                    FollowingModuleView(path: $viewModel.path, following: following)
                 case let .otherProfile(user):
                     OtherProfileModuleView(
                         viewModel: StateObject(wrappedValue: OtherProfileModuleViewModel(

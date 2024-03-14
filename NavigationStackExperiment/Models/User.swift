@@ -1,6 +1,6 @@
 import Foundation
 
-struct User: Identifiable {
+struct User: Identifiable, Equatable, Hashable {
     let id: UUID = .init()
     var displayName: String
     var userName: String

@@ -13,8 +13,8 @@ struct ProfileModuleView: View {
                 HeaderView(displayName: viewModel.displayName)
                 InfoView()
                 FollowCountView(
-                    followersCount: viewModel.followersCount,
-                    followingCount: viewModel.followingCount
+                    followers: viewModel.followers,
+                    following: viewModel.following
                 )
                 EditButton()
                 PostsListView()
@@ -23,10 +23,16 @@ struct ProfileModuleView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(for: Route.self) { route in
                 switch route {
-                case .followers:
-                    FollowersModuleView(followers: viewModel.followers)
-                case .following:
-                    FollowingModuleView(following: viewModel.following)
+                case let .followers(followers):
+                    FollowersModuleView(followers: followers)
+                case let .following(following):
+                    FollowingModuleView(following: following)
+                case let .otherProfile(user):
+                    OtherProfileModuleView(
+                        viewModel: StateObject(wrappedValue: OtherProfileModuleViewModel(
+                            model: OterProfileModuleModel(otherUser: user)
+                        ))
+                    )
                 }
             }
         }

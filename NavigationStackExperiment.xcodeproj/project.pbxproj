@@ -24,6 +24,9 @@
 		739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE1E2BA1E82B0059AF68 /* UserRow.swift */; };
 		739CDE222BA1E91D0059AF68 /* FollowingModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */; };
 		739CDE262BA1EB5E0059AF68 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE252BA1EB5E0059AF68 /* Route.swift */; };
+		739CDE292BA2DC1F0059AF68 /* OtherProfileModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE282BA2DC1F0059AF68 /* OtherProfileModuleView.swift */; };
+		739CDE2B2BA2DC870059AF68 /* OtherProfileModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE2A2BA2DC870059AF68 /* OtherProfileModuleViewModel.swift */; };
+		739CDE2D2BA2DCAF0059AF68 /* OterProfileModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDE2C2BA2DCAF0059AF68 /* OterProfileModuleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		739CDE1E2BA1E82B0059AF68 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModuleView.swift; sourceTree = "<group>"; };
 		739CDE252BA1EB5E0059AF68 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		739CDE282BA2DC1F0059AF68 /* OtherProfileModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileModuleView.swift; sourceTree = "<group>"; };
+		739CDE2A2BA2DC870059AF68 /* OtherProfileModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileModuleViewModel.swift; sourceTree = "<group>"; };
+		739CDE2C2BA2DCAF0059AF68 /* OterProfileModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OterProfileModuleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 			children = (
 				739CDE232BA1E9BB0059AF68 /* Followers */,
 				739CDE242BA1E9C30059AF68 /* Following */,
+				739CDE272BA2DBCA0059AF68 /* OtherProfile */,
 				739CDE0A2BA1D9C20059AF68 /* Profile */,
 			);
 			path = Modules;
@@ -152,6 +159,16 @@
 				739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */,
 			);
 			path = Following;
+			sourceTree = "<group>";
+		};
+		739CDE272BA2DBCA0059AF68 /* OtherProfile */ = {
+			isa = PBXGroup;
+			children = (
+				739CDE2C2BA2DCAF0059AF68 /* OterProfileModuleModel.swift */,
+				739CDE282BA2DC1F0059AF68 /* OtherProfileModuleView.swift */,
+				739CDE2A2BA2DC870059AF68 /* OtherProfileModuleViewModel.swift */,
+			);
+			path = OtherProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +252,10 @@
 				739CDDF72BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift in Sources */,
 				739CDE0C2BA1D9E60059AF68 /* ProfileModuleViewModel.swift in Sources */,
 				739CDE072BA1D8130059AF68 /* User.swift in Sources */,
+				739CDE292BA2DC1F0059AF68 /* OtherProfileModuleView.swift in Sources */,
 				739CDE132BA1DEB80059AF68 /* InfoView.swift in Sources */,
+				739CDE2D2BA2DCAF0059AF68 /* OterProfileModuleModel.swift in Sources */,
+				739CDE2B2BA2DC870059AF68 /* OtherProfileModuleViewModel.swift in Sources */,
 				739CDE1D2BA1E77A0059AF68 /* FollowersModuleView.swift in Sources */,
 				739CDE222BA1E91D0059AF68 /* FollowingModuleView.swift in Sources */,
 				739CDE152BA1E0D30059AF68 /* FollowCountView.swift in Sources */,

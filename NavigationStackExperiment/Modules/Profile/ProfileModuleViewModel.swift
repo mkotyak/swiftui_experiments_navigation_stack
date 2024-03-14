@@ -6,23 +6,15 @@ class ProfileModuleViewModel: ObservableObject {
     @Published var path: NavigationPath = .init()
     
     var displayName: String {
-        model.user.displayName
+        model.currentUser.displayName
     }
     
     var followers: [User] {
-        model.user.followers
+        model.currentUser.followers
     }
     
     var following: [User] {
-        model.user.following
-    }
-    
-    var followersCount: Int {
-        followers.count
-    }
-    
-    var followingCount: Int {
-        following.count
+        model.currentUser.following
     }
     
     init(model: ProfileModuleModel) {

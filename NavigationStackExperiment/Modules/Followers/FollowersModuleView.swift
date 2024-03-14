@@ -7,7 +7,9 @@ struct FollowersModuleView: View {
         ScrollView {
             LazyVStack {
                 ForEach(followers) { user in
-                    UserRow(user: user)
+                    NavigationLink(value: Route.otherProfile(user)) {
+                        UserRow(user: user)
+                    }
                 }
             }
             .padding(.top)

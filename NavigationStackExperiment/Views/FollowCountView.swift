@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct FollowCountView: View {
-    let followersCount: Int
-    let followingCount: Int
+    let followers: [User]
+    let following: [User]
 
     var body: some View {
         HStack {
@@ -15,9 +15,9 @@ struct FollowCountView: View {
     }
 
     private var followersCountView: some View {
-        NavigationLink(value: Route.followers) {
+        NavigationLink(value: Route.followers(followers)) {
             VStack {
-                Text("\(followersCount)")
+                Text("\(followers.count)")
                 Text("Followers")
             }
             .foregroundStyle(.black)
@@ -25,9 +25,9 @@ struct FollowCountView: View {
     }
 
     private var followingCountView: some View {
-        NavigationLink(value: Route.following) {
+        NavigationLink(value: Route.following(following)) {
             VStack {
-                Text("\(followersCount)")
+                Text("\(following.count)")
                 Text("Following")
             }
             .foregroundStyle(.black)

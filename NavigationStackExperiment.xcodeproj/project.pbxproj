@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73840B202BA43DAA009E07BC /* FollowersModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73840B1F2BA43DAA009E07BC /* FollowersModuleViewModel.swift */; };
+		73840B222BA43DB3009E07BC /* FollowingModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73840B212BA43DB3009E07BC /* FollowingModuleViewModel.swift */; };
 		739CDDF72BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDDF62BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift */; };
 		739CDDF92BA1D6EB0059AF68 /* ProfileModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739CDDF82BA1D6EB0059AF68 /* ProfileModuleView.swift */; };
 		739CDDFB2BA1D6EC0059AF68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739CDDFA2BA1D6EC0059AF68 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73840B1F2BA43DAA009E07BC /* FollowersModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersModuleViewModel.swift; sourceTree = "<group>"; };
+		73840B212BA43DB3009E07BC /* FollowingModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingModuleViewModel.swift; sourceTree = "<group>"; };
 		739CDDF32BA1D6EB0059AF68 /* NavigationStackExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739CDDF62BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackExperimentApp.swift; sourceTree = "<group>"; };
 		739CDDF82BA1D6EB0059AF68 /* ProfileModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleView.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				739CDE1C2BA1E77A0059AF68 /* FollowersModuleView.swift */,
+				73840B1F2BA43DAA009E07BC /* FollowersModuleViewModel.swift */,
 			);
 			path = Followers;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				739CDE212BA1E91D0059AF68 /* FollowingModuleView.swift */,
+				73840B212BA43DB3009E07BC /* FollowingModuleViewModel.swift */,
 			);
 			path = Following;
 			sourceTree = "<group>";
@@ -245,10 +251,12 @@
 				739CDE172BA1E27A0059AF68 /* EditButton.swift in Sources */,
 				739CDE192BA1E3840059AF68 /* PostRow.swift in Sources */,
 				739CDE262BA1EB5E0059AF68 /* Route.swift in Sources */,
+				73840B222BA43DB3009E07BC /* FollowingModuleViewModel.swift in Sources */,
 				739CDE112BA1DBDC0059AF68 /* HeaderView.swift in Sources */,
 				739CDE0E2BA1D9F30059AF68 /* ProfileModuleModel.swift in Sources */,
 				739CDE1F2BA1E82B0059AF68 /* UserRow.swift in Sources */,
 				739CDE1B2BA1E4F00059AF68 /* PostsListView.swift in Sources */,
+				73840B202BA43DAA009E07BC /* FollowersModuleViewModel.swift in Sources */,
 				739CDDF72BA1D6EB0059AF68 /* NavigationStackExperimentApp.swift in Sources */,
 				739CDE0C2BA1D9E60059AF68 /* ProfileModuleViewModel.swift in Sources */,
 				739CDE072BA1D8130059AF68 /* User.swift in Sources */,

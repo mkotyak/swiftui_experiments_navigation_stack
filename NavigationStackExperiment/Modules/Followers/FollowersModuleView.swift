@@ -1,8 +1,16 @@
 import SwiftUI
 
 struct FollowersModuleView: View {
-    @Binding var path: NavigationPath
-    let followers: [User]
+    @StateObject private var viewModel: FollowersModuleViewModel
+    private let followers: [User]
+
+    init(
+        viewModel: StateObject<FollowersModuleViewModel>,
+        followers: [User]
+    ) {
+        self._viewModel = viewModel
+        self.followers = followers
+    }
 
     var body: some View {
         ScrollView {
@@ -19,7 +27,7 @@ struct FollowersModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    path = .init()
+                    viewModel.viewDidSelectBack()
                 } label: {
                     Image(systemName: "house")
                         .resizable()

@@ -32,17 +32,17 @@ struct HomescreenModuleView: View {
                 // Second Approach - When Homescreen build navigation destinations by itself
 //                switch navigationItem {
 //                case .settings:
-//                    SettingsView(path: $path)
+//                    SettingsModuleBuilder().view(path: $viewModel.path)
 //                case .languagePicker:
-//                    LanguagePickerView(path: $path)
+//                    LanguagePickerModuleBuilder().view(path: $viewModel.path)
 //                case .gameSetup(let gameMode):
-//                    GameSetupView(
-//                        path: $path,
+//                    GameSetupModuleBuilder().view(
+//                        path: $viewModel.path,
 //                        gameMode: gameMode
 //                    )
 //                case .game(let gameSource):
-//                    GameView(
-//                        path: $path,
+//                    GameModuleBuilder().view(
+//                        path: $viewModel.path,
 //                        gameSource: gameSource
 //                    )
 //                }

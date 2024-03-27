@@ -2,7 +2,11 @@ import SwiftUI
 
 struct GameSetupView: View {
     @Binding var path: [NavigationItem]
-    let packs: [Pack]
+    let gameMode: GameMode
+
+    var packs: [Pack] {
+        []
+    }
 
     var body: some View {
         VStack(spacing: 8) {
@@ -36,9 +40,7 @@ struct GameSetupView: View {
     private func packCard(for pack: Pack) -> some View {
         Button {
             path.append(
-                .game(.config(
-                    .init(gameCards: pack.cards)
-                ))
+                .game(.config(.init(pack: pack)))
             )
         } label: {
             RoundedRectangle(cornerRadius: 20)

@@ -6,7 +6,8 @@ final class HomescreenModuleBuilder {
         .init(
             viewModel: StateObject(wrappedValue: HomescreenModuleViewModel()),
             navigationController: .init(
-                settingsModuleBuilder: .init()
+                settingsModuleBuilder: .init(),
+                languagePickerModuleBuilder: .init()
             )
         )
     }

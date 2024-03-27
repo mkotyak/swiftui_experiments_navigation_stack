@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct LanguagePickerModuleView: View {
-    @Binding var path: [NavigationItem]
+    @StateObject private var viewModel: LanguagePickerModuleViewModel
+
+    init(viewModel: StateObject<LanguagePickerModuleViewModel>) {
+        self._viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -31,7 +35,7 @@ struct LanguagePickerModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    path.removeLast()
+                    viewModel.viewDidSelecrLeave()
                 }
             }
         }
@@ -54,6 +58,3 @@ struct LanguagePickerModuleView: View {
         }
     }
 }
-
-
-

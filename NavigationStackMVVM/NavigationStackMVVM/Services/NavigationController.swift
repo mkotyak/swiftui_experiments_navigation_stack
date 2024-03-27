@@ -2,11 +2,14 @@ import SwiftUI
 
 class NavigationController {
     private let settingsModuleBuilder: SettingsModuleBuilder
+    private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
     
     init(
-        settingsModuleBuilder: SettingsModuleBuilder
+        settingsModuleBuilder: SettingsModuleBuilder,
+        languagePickerModuleBuilder: LanguagePickerModuleBuilder
     ) {
         self.settingsModuleBuilder = settingsModuleBuilder
+        self.languagePickerModuleBuilder = languagePickerModuleBuilder
     }
     @ViewBuilder
     func navigate(
@@ -17,7 +20,7 @@ class NavigationController {
         case .settings:
             settingsModuleBuilder.view(path: path)
         case .languagePicker:
-            LanguagePickerModuleView(path: path)
+            languagePickerModuleBuilder.view(path: path)
         case .gameSetup(let gameMode):
             GameSetupModuleView(
                 path: path,

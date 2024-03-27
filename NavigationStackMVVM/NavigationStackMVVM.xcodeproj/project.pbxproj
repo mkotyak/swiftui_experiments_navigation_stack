@@ -30,6 +30,8 @@
 		73C774762BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774752BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift */; };
 		73C774782BB432A4002AD4E3 /* SettingsModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774772BB432A4002AD4E3 /* SettingsModuleViewModel.swift */; };
 		73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */; };
+		73C7747C2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747B2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift */; };
+		73C7747E2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747D2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		73C774752BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleViewModel.swift; sourceTree = "<group>"; };
 		73C774772BB432A4002AD4E3 /* SettingsModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleViewModel.swift; sourceTree = "<group>"; };
 		73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
+		73C7747B2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleViewModel.swift; sourceTree = "<group>"; };
+		73C7747D2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +187,9 @@
 		73C774522BB41D9F002AD4E3 /* LanguagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				73C7747D2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift */,
 				73C7746B2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift */,
+				73C7747B2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift */,
 			);
 			path = LanguagePicker;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				73C7746E2BB41EF1002AD4E3 /* SettingsModuleView.swift in Sources */,
 				73C7745E2BB41E3A002AD4E3 /* GameConfig.swift in Sources */,
 				73C774782BB432A4002AD4E3 /* SettingsModuleViewModel.swift in Sources */,
+				73C7747C2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift in Sources */,
 				73C774742BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift in Sources */,
 				73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */,
 				73C7745A2BB41DED002AD4E3 /* NavigationController.swift in Sources */,
@@ -295,6 +302,7 @@
 				73C774582BB41DD7002AD4E3 /* HeaderView.swift in Sources */,
 				73C7746A2BB41EAB002AD4E3 /* GameModuleView.swift in Sources */,
 				73C774622BB41E50002AD4E3 /* GameSource.swift in Sources */,
+				73C7747E2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

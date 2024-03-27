@@ -8,17 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7743D2BB41983002AD4E3 /* NavigationStackMVVMApp.swift */; };
-		73C774402BB41983002AD4E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7743F2BB41983002AD4E3 /* ContentView.swift */; };
+		73C774402BB41983002AD4E3 /* HomescreenModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7743F2BB41983002AD4E3 /* HomescreenModuleView.swift */; };
 		73C774422BB41984002AD4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C774412BB41984002AD4E3 /* Assets.xcassets */; };
 		73C774452BB41984002AD4E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C774442BB41984002AD4E3 /* Preview Assets.xcassets */; };
+		73C774562BB41DC8002AD4E3 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774552BB41DC8002AD4E3 /* BackButton.swift */; };
+		73C774582BB41DD7002AD4E3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774572BB41DD7002AD4E3 /* HeaderView.swift */; };
+		73C7745A2BB41DED002AD4E3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774592BB41DED002AD4E3 /* NavigationController.swift */; };
+		73C7745C2BB41E2D002AD4E3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7745B2BB41E2D002AD4E3 /* Card.swift */; };
+		73C7745E2BB41E3A002AD4E3 /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7745D2BB41E3A002AD4E3 /* GameConfig.swift */; };
+		73C774602BB41E45002AD4E3 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7745F2BB41E45002AD4E3 /* GameMode.swift */; };
+		73C774622BB41E50002AD4E3 /* GameSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774612BB41E50002AD4E3 /* GameSource.swift */; };
+		73C774642BB41E5B002AD4E3 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774632BB41E5B002AD4E3 /* NavigationItem.swift */; };
+		73C774662BB41E67002AD4E3 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774652BB41E67002AD4E3 /* Pack.swift */; };
+		73C774682BB41E8D002AD4E3 /* GameSetupModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774672BB41E8D002AD4E3 /* GameSetupModuleView.swift */; };
+		73C7746A2BB41EAB002AD4E3 /* GameModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774692BB41EAB002AD4E3 /* GameModuleView.swift */; };
+		73C7746C2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7746B2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift */; };
+		73C7746E2BB41EF1002AD4E3 /* SettingsModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7746D2BB41EF1002AD4E3 /* SettingsModuleView.swift */; };
+		73C774702BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7746F2BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift */; };
+		73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73C7743A2BB41983002AD4E3 /* NavigationStackMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C7743D2BB41983002AD4E3 /* NavigationStackMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackMVVMApp.swift; sourceTree = "<group>"; };
-		73C7743F2BB41983002AD4E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73C7743F2BB41983002AD4E3 /* HomescreenModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleView.swift; sourceTree = "<group>"; };
 		73C774412BB41984002AD4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C774442BB41984002AD4E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73C774552BB41DC8002AD4E3 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		73C774572BB41DD7002AD4E3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		73C774592BB41DED002AD4E3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		73C7745B2BB41E2D002AD4E3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		73C7745D2BB41E3A002AD4E3 /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		73C7745F2BB41E45002AD4E3 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		73C774612BB41E50002AD4E3 /* GameSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSource.swift; sourceTree = "<group>"; };
+		73C774632BB41E5B002AD4E3 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		73C774652BB41E67002AD4E3 /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		73C774672BB41E8D002AD4E3 /* GameSetupModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleView.swift; sourceTree = "<group>"; };
+		73C774692BB41EAB002AD4E3 /* GameModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleView.swift; sourceTree = "<group>"; };
+		73C7746B2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleView.swift; sourceTree = "<group>"; };
+		73C7746D2BB41EF1002AD4E3 /* SettingsModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleView.swift; sourceTree = "<group>"; };
+		73C7746F2BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
+		73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Deeplink.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				73C7743D2BB41983002AD4E3 /* NavigationStackMVVMApp.swift */,
-				73C7743F2BB41983002AD4E3 /* ContentView.swift */,
 				73C774412BB41984002AD4E3 /* Assets.xcassets */,
+				73C7744E2BB41D7B002AD4E3 /* Extensions */,
+				73C7744C2BB41D6E002AD4E3 /* Models */,
+				73C7744B2BB41D69002AD4E3 /* Modules */,
 				73C774432BB41984002AD4E3 /* Preview Content */,
+				73C7744F2BB41D81002AD4E3 /* Services */,
+				73C7744D2BB41D77002AD4E3 /* Views */,
 			);
 			path = NavigationStackMVVM;
 			sourceTree = "<group>";
@@ -65,6 +99,97 @@
 				73C774442BB41984002AD4E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73C7744B2BB41D69002AD4E3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				73C774542BB41DAD002AD4E3 /* Game */,
+				73C774532BB41DA7002AD4E3 /* GameSetup */,
+				73C774502BB41D8F002AD4E3 /* Homescreen */,
+				73C774522BB41D9F002AD4E3 /* LanguagePicker */,
+				73C774512BB41D9A002AD4E3 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		73C7744C2BB41D6E002AD4E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73C7745B2BB41E2D002AD4E3 /* Card.swift */,
+				73C7745D2BB41E3A002AD4E3 /* GameConfig.swift */,
+				73C7745F2BB41E45002AD4E3 /* GameMode.swift */,
+				73C774612BB41E50002AD4E3 /* GameSource.swift */,
+				73C774632BB41E5B002AD4E3 /* NavigationItem.swift */,
+				73C774652BB41E67002AD4E3 /* Pack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73C7744D2BB41D77002AD4E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73C774552BB41DC8002AD4E3 /* BackButton.swift */,
+				73C774572BB41DD7002AD4E3 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73C7744E2BB41D7B002AD4E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */,
+				73C7746F2BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		73C7744F2BB41D81002AD4E3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				73C774592BB41DED002AD4E3 /* NavigationController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		73C774502BB41D8F002AD4E3 /* Homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				73C7743F2BB41983002AD4E3 /* HomescreenModuleView.swift */,
+			);
+			path = Homescreen;
+			sourceTree = "<group>";
+		};
+		73C774512BB41D9A002AD4E3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				73C7746D2BB41EF1002AD4E3 /* SettingsModuleView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		73C774522BB41D9F002AD4E3 /* LanguagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				73C7746B2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift */,
+			);
+			path = LanguagePicker;
+			sourceTree = "<group>";
+		};
+		73C774532BB41DA7002AD4E3 /* GameSetup */ = {
+			isa = PBXGroup;
+			children = (
+				73C774672BB41E8D002AD4E3 /* GameSetupModuleView.swift */,
+			);
+			path = GameSetup;
+			sourceTree = "<group>";
+		};
+		73C774542BB41DAD002AD4E3 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				73C774692BB41EAB002AD4E3 /* GameModuleView.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +262,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C774402BB41983002AD4E3 /* ContentView.swift in Sources */,
+				73C774682BB41E8D002AD4E3 /* GameSetupModuleView.swift in Sources */,
+				73C774602BB41E45002AD4E3 /* GameMode.swift in Sources */,
+				73C774402BB41983002AD4E3 /* HomescreenModuleView.swift in Sources */,
+				73C7745C2BB41E2D002AD4E3 /* Card.swift in Sources */,
+				73C7746E2BB41EF1002AD4E3 /* SettingsModuleView.swift in Sources */,
+				73C7745E2BB41E3A002AD4E3 /* GameConfig.swift in Sources */,
 				73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */,
+				73C7745A2BB41DED002AD4E3 /* NavigationController.swift in Sources */,
+				73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */,
+				73C774642BB41E5B002AD4E3 /* NavigationItem.swift in Sources */,
+				73C774702BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift in Sources */,
+				73C774662BB41E67002AD4E3 /* Pack.swift in Sources */,
+				73C774562BB41DC8002AD4E3 /* BackButton.swift in Sources */,
+				73C7746C2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift in Sources */,
+				73C774582BB41DD7002AD4E3 /* HeaderView.swift in Sources */,
+				73C7746A2BB41EAB002AD4E3 /* GameModuleView.swift in Sources */,
+				73C774622BB41E50002AD4E3 /* GameSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +420,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +428,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +454,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +462,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

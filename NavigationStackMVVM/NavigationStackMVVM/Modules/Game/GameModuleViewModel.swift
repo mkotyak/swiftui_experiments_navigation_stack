@@ -18,8 +18,13 @@ final class GameModuleViewModel: ObservableObject {
         path: Binding<[NavigationItem]>,
         gameSource: GameSource
     ) {
+        debugPrint("🚘 GameModuleViewModel - INIT")
         self._path = path
         self.gameSource = gameSource
+    }
+    
+    deinit {
+        debugPrint("🚘 GameModuleViewModel - DEINIT")
     }
     
     // MARK: - Intents

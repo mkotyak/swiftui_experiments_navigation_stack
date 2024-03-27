@@ -4,10 +4,12 @@ final class HomescreenModuleViewModel: ObservableObject {
     @Published var path: [NavigationItem] = []
 
     init() {
+        debugPrint("🚘 HomescreenModuleViewModel - INIT")
         subscribeOnDeeplinkOpening()
     }
 
     deinit {
+        debugPrint("🚘 HomescreenModuleViewModel - DEINIT")
         unsubscribeFromDeeplinkOpening()
     }
 

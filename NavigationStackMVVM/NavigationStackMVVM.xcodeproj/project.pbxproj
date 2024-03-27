@@ -32,6 +32,9 @@
 		73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */; };
 		73C7747C2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747B2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift */; };
 		73C7747E2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747D2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift */; };
+		73C774802BB436BC002AD4E3 /* GameSetupModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747F2BB436BC002AD4E3 /* GameSetupModuleViewModel.swift */; };
+		73C774822BB436C2002AD4E3 /* GameSetupModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774812BB436C2002AD4E3 /* GameSetupModuleBuilder.swift */; };
+		73C774842BB436C9002AD4E3 /* GameSetupModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
 		73C7747B2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleViewModel.swift; sourceTree = "<group>"; };
 		73C7747D2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilder.swift; sourceTree = "<group>"; };
+		73C7747F2BB436BC002AD4E3 /* GameSetupModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleViewModel.swift; sourceTree = "<group>"; };
+		73C774812BB436C2002AD4E3 /* GameSetupModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleBuilder.swift; sourceTree = "<group>"; };
+		73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +203,10 @@
 		73C774532BB41DA7002AD4E3 /* GameSetup */ = {
 			isa = PBXGroup;
 			children = (
+				73C774812BB436C2002AD4E3 /* GameSetupModuleBuilder.swift */,
+				73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */,
 				73C774672BB41E8D002AD4E3 /* GameSetupModuleView.swift */,
+				73C7747F2BB436BC002AD4E3 /* GameSetupModuleViewModel.swift */,
 			);
 			path = GameSetup;
 			sourceTree = "<group>";
@@ -293,6 +302,7 @@
 				73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */,
 				73C7745A2BB41DED002AD4E3 /* NavigationController.swift in Sources */,
 				73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */,
+				73C774822BB436C2002AD4E3 /* GameSetupModuleBuilder.swift in Sources */,
 				73C774642BB41E5B002AD4E3 /* NavigationItem.swift in Sources */,
 				73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */,
 				73C774702BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift in Sources */,
@@ -300,8 +310,10 @@
 				73C774562BB41DC8002AD4E3 /* BackButton.swift in Sources */,
 				73C7746C2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift in Sources */,
 				73C774582BB41DD7002AD4E3 /* HeaderView.swift in Sources */,
+				73C774842BB436C9002AD4E3 /* GameSetupModuleModel.swift in Sources */,
 				73C7746A2BB41EAB002AD4E3 /* GameModuleView.swift in Sources */,
 				73C774622BB41E50002AD4E3 /* GameSource.swift in Sources */,
+				73C774802BB436BC002AD4E3 /* GameSetupModuleViewModel.swift in Sources */,
 				73C7747E2BB434D4002AD4E3 /* LanguagePickerModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

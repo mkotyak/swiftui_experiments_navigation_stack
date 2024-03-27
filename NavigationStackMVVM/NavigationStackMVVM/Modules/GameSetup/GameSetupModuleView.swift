@@ -1,73 +1,17 @@
 import SwiftUI
 
 struct GameSetupModuleView: View {
-    @Binding var path: [NavigationItem]
-    let gameMode: GameMode
+    @StateObject private var viewModel: GameSetupModuleViewModel
 
-    var packs: [Pack] {
-        switch gameMode {
-        case .one:
-            [
-                .init(title: "GM One - Pack 1", cards: [
-                    .init(text: "GM One - Pack 1: Card 1"),
-                    .init(text: "GM One - Pack 1: Card 2"),
-                    .init(text: "GM One - Pack 1: Card 3"),
-                ]),
-                .init(title: "GM One - Pack 2", cards: [
-                    .init(text: "GM One - Pack 2: Card 1"),
-                    .init(text: "GM One - Pack 2: Card 2"),
-                    .init(text: "GM One - Pack 2: Card 3"),
-                ]),
-                .init(title: "GM One - Pack 3", cards: [
-                    .init(text: "GM One - Pack 3: Card 1"),
-                    .init(text: "GM One - Pack 3: Card 2"),
-                    .init(text: "GM One - Pack 3: Card 3"),
-                ]),
-            ]
-        case .two:
-            [
-                .init(title: "GM Two - Pack 1", cards: [
-                    .init(text: "GM Two - Pack 1: Card 1"),
-                    .init(text: "GM Two - Pack 1: Card 2"),
-                    .init(text: "GM Two - Pack 1: Card 3"),
-                ]),
-                .init(title: "GM Two - Pack 2", cards: [
-                    .init(text: "GM Two - Pack 2: Card 1"),
-                    .init(text: "GM Two - Pack 2: Card 2"),
-                    .init(text: "GM Two - Pack 2: Card 3"),
-                ]),
-                .init(title: "GM Two - Pack 3", cards: [
-                    .init(text: "GM Two - Pack 3: Card 1"),
-                    .init(text: "GM Two - Pack 3: Card 2"),
-                    .init(text: "GM Two - Pack 3: Card 3"),
-                ]),
-            ]
-        case .three:
-            [
-                .init(title: "GM Three - Pack 1", cards: [
-                    .init(text: "GM Three - Pack 1: Card 1"),
-                    .init(text: "GM Three - Pack 1: Card 2"),
-                    .init(text: "GM Three - Pack 1: Card 3"),
-                ]),
-                .init(title: "GM Three - Pack 2", cards: [
-                    .init(text: "GM Three - Pack 2: Card 1"),
-                    .init(text: "GM Three - Pack 2: Card 2"),
-                    .init(text: "GM Three - Pack 2: Card 3"),
-                ]),
-                .init(title: "GM Three - Pack 3", cards: [
-                    .init(text: "GM Three - Pack 3: Card 1"),
-                    .init(text: "GM Three - Pack 3: Card 2"),
-                    .init(text: "GM Three - Pack 3: Card 3"),
-                ]),
-            ]
-        }
+    init(viewModel: StateObject<GameSetupModuleViewModel>) {
+        self._viewModel = viewModel
     }
 
     var body: some View {
         VStack(spacing: 8) {
-            HeaderView(title: "Game Mode: \(gameMode.title)")
+            HeaderView(title: "Game Mode: \(viewModel.title)")
             Spacer()
-            ForEach(packs) { pack in
+            ForEach(viewModel.packs) { pack in
                 packCard(for: pack)
             }
             .padding(.vertical, 6)
@@ -79,26 +23,13 @@ struct GameSetupModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    path.removeLast()
+                    viewModel.viewDidSelectLeave()
                 }
             }
 
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    // First Approach - When GameSetup manage deeplinking by itself
-//                    path = [
-//                        .gameSetup(.three),
-//                        .game(.pack(.init(
-//                            title: "Deeplink Pack",
-//                            cards: []
-//                        )))
-//                    ]
-
-                    // Second Approach - When GameSetup posts notification aboud deeplinking to Homescreen manage it by itself
-                    NotificationCenter.default.post(
-                        name: .onDeeplinkOpening,
-                        object: nil
-                    )
+                    viewModel.viewDidSelectDeeplink()
                 } label: {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
@@ -108,9 +39,7 @@ struct GameSetupModuleView: View {
 
     private func packCard(for pack: Pack) -> some View {
         Button {
-            path.append(
-                .game(.config(.init(pack: pack)))
-            )
+            viewModel.viewDidSelect(pack: pack)
         } label: {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(.white)

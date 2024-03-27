@@ -37,7 +37,13 @@ struct HomescreenView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        debugPrint("Deeplink")
+                        path = [
+                            .gameSetup(.three),
+                            .game(.pack(.init(
+                                title: "Deeplink Pack",
+                                cards: []
+                            )))
+                        ]
                     } label: {
                         Image(systemName: "rectangle.portrait.and.arrow.forward")
                             .resizable()

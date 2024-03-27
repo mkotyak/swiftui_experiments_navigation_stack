@@ -85,7 +85,13 @@ struct GameSetupView: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    debugPrint("Deeplink")
+                    path = [
+                        .gameSetup(.three),
+                        .game(.pack(.init(
+                            title: "Deeplink Pack",
+                            cards: []
+                        )))
+                    ]
                 } label: {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }

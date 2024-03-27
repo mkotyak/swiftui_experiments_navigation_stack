@@ -28,12 +28,26 @@ struct GameView: View {
             Spacer()
         }
         .padding()
-        .background(Color.green.opacity(0.1))
+        .background(Color.red.opacity(0.1))
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
                     path.removeLast()
+                }
+            }
+
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    path = [
+                        .gameSetup(.three),
+                        .game(.pack(.init(
+                            title: "Deeplink Pack",
+                            cards: []
+                        )))
+                    ]
+                } label: {
+                    Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
             }
         }

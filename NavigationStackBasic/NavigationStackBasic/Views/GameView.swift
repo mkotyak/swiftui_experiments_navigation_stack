@@ -39,13 +39,18 @@ struct GameView: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    path = [
-                        .gameSetup(.three),
-                        .game(.pack(.init(
-                            title: "Deeplink Pack",
-                            cards: []
-                        )))
-                    ]
+//                    path = [
+//                        .gameSetup(.three),
+//                        .game(.pack(.init(
+//                            title: "Deeplink Pack",
+//                            cards: []
+//                        )))
+//                    ]
+                    
+                    NotificationCenter.default.post(
+                        name: .onDeeplinkOpening,
+                        object: nil
+                    )
                 } label: {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }

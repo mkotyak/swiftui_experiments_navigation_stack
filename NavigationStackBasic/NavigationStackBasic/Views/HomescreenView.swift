@@ -59,6 +59,12 @@ struct HomescreenView: View {
                     }
                 }
             }
+            .onAppear {
+                subscribeOnDeeplinkOpening()
+            }
+            .onDisappear {
+                unsubscribeFromDeeplinkOpening()
+            }
         }
     }
 
@@ -75,5 +81,27 @@ struct HomescreenView: View {
                         .bold()
                 }
         }
+    }
+
+    // MARK: - Deeplink
+
+    private func subscribeOnDeeplinkOpening() {
+        NotificationCenter.default.addObserver(
+            forName: .onDeeplinkOpening,
+            object: nil,
+            queue: .main
+        ) { _ in
+            path = [
+                .gameSetup(.three),
+                .game(.pack(.init(
+                    title: "Deeplink Pack",
+                    cards: []
+                )))
+            ]
+        }
+    }
+
+    private func unsubscribeFromDeeplinkOpening() {
+        NotificationCenter.default.removeObserver(self)
     }
 }

@@ -24,6 +24,7 @@
 		735391832BB4080F00E23357 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391822BB4080F00E23357 /* GameSetupView.swift */; };
 		735391852BB4091D00E23357 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391842BB4091D00E23357 /* GameView.swift */; };
 		735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */; };
+		7353918A2BB411E900E23357 /* NotificationName+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391892BB411E900E23357 /* NotificationName+Deeplink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		735391822BB4080F00E23357 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
 		735391842BB4091D00E23357 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
+		735391892BB411E900E23357 /* NotificationName+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Deeplink.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */,
+				735391892BB411E900E23357 /* NotificationName+Deeplink.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				7353917A2BB403E700E23357 /* HeaderView.swift in Sources */,
 				735391732BB3FCC300E23357 /* GameConfig.swift in Sources */,
 				7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */,
+				7353918A2BB411E900E23357 /* NotificationName+Deeplink.swift in Sources */,
 				735391832BB4080F00E23357 /* GameSetupView.swift in Sources */,
 				735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */,
 				735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */,

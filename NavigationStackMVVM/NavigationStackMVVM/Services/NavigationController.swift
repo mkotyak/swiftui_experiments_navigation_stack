@@ -1,6 +1,6 @@
 import SwiftUI
 
-class NavigationController {
+struct NavigationController {
     private let settingsModuleBuilder: SettingsModuleBuilder
     private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
     private let gameSetupModuleBuilder: GameSetupModuleBuilder

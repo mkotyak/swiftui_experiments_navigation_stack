@@ -1,7 +1,14 @@
 import Foundation
 
 final class HomescreenModuleViewModel: ObservableObject {
-    @Published var path: [NavigationItem] = []
+    @Published var path: [NavigationItem] = [] {
+        didSet {
+            debugPrint("🚘 PATH - Count: \(path.count)")
+            path.forEach { item in
+                debugPrint("🚘 \(item.debugDescription)")
+            }
+        }
+    }
 
     init() {
         debugPrint("🚘 HomescreenModuleViewModel - INIT")

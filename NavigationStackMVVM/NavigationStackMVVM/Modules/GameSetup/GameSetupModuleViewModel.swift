@@ -8,7 +8,7 @@ final class GameSetupModuleViewModel: ObservableObject {
     var packs: [Pack] {
         model.packs
     }
-    
+
     var title: String {
         model.gameMode.title
     }
@@ -21,7 +21,7 @@ final class GameSetupModuleViewModel: ObservableObject {
         self._path = path
         self.model = model
     }
-    
+
     deinit {
         debugPrint("🚘 GameSetupModuleViewModel - DEINIT")
     }

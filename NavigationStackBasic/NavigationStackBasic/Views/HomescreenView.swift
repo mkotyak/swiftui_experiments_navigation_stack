@@ -48,7 +48,6 @@ struct HomescreenView: View {
                 .overlay {
                     Text(gameMode.title)
                         .font(.headline)
-                        .foregroundStyle(.black)
                         .bold()
                 }
         }

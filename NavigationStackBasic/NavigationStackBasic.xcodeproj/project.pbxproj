@@ -19,6 +19,7 @@
 		735391772BB3FD0700E23357 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391762BB3FD0700E23357 /* Card.swift */; };
 		7353917A2BB403E700E23357 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391792BB403E700E23357 /* HeaderView.swift */; };
 		7353917C2BB403F900E23357 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353917B2BB403F900E23357 /* BackButton.swift */; };
+		7353917F2BB4063300E23357 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353917E2BB4063300E23357 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		735391762BB3FD0700E23357 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		735391792BB403E700E23357 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7353917B2BB403F900E23357 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		7353917E2BB4063300E23357 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 		7353916B2BB3FB4900E23357 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7353917B2BB403F900E23357 /* BackButton.swift */,
-				735391792BB403E700E23357 /* HeaderView.swift */,
 				7353915E2BB3FACA00E23357 /* HomescreenView.swift */,
+				7353917E2BB4063300E23357 /* SettingsView.swift */,
+				7353917D2BB4062200E23357 /* Common */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +115,15 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7353917D2BB4062200E23357 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7353917B2BB403F900E23357 /* BackButton.swift */,
+				735391792BB403E700E23357 /* HeaderView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				7353916D2BB3FB7700E23357 /* GameMode.swift in Sources */,
 				735391712BB3FCA300E23357 /* GameSource.swift in Sources */,
 				735391772BB3FD0700E23357 /* Card.swift in Sources */,
+				7353917F2BB4063300E23357 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

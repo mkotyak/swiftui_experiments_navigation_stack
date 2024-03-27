@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct LanguagePickerModuleBuilder {
+class LanguagePickerModuleBuilder {
     func view(path: Binding<[NavigationItem]>) -> LanguagePickerModuleView {
         LanguagePickerModuleView(
             viewModel: StateObject(wrappedValue: LanguagePickerModuleViewModel(

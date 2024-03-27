@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct GameModuleBuilder {
+class GameModuleBuilder {
     func view(
         path: Binding<[NavigationItem]>,
         gameSource: GameSource

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SettingsModuleBuilder {
+class SettingsModuleBuilder {
     func view(path: Binding<[NavigationItem]>) -> SettingsModuleView {
         SettingsModuleView(
             viewModel: StateObject(wrappedValue: SettingsModuleViewModel(

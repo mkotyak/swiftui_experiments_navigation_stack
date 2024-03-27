@@ -25,6 +25,7 @@
 		735391852BB4091D00E23357 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391842BB4091D00E23357 /* GameView.swift */; };
 		735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */; };
 		7353918A2BB411E900E23357 /* NotificationName+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391892BB411E900E23357 /* NotificationName+Deeplink.swift */; };
+		7353918C2BB413AB00E23357 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353918B2BB413AB00E23357 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		735391842BB4091D00E23357 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
 		735391892BB411E900E23357 /* NotificationName+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Deeplink.swift"; sourceTree = "<group>"; };
+		7353918B2BB413AB00E23357 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		735391782BB4039D00E23357 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7353918B2BB413AB00E23357 /* NavigationController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				735391732BB3FCC300E23357 /* GameConfig.swift in Sources */,
 				7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */,
 				7353918A2BB411E900E23357 /* NotificationName+Deeplink.swift in Sources */,
+				7353918C2BB413AB00E23357 /* NavigationController.swift in Sources */,
 				735391832BB4080F00E23357 /* GameSetupView.swift in Sources */,
 				735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */,
 				735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */,

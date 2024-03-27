@@ -2,6 +2,11 @@ import SwiftUI
 
 struct HomescreenView: View {
     @State var path: [NavigationItem] = []
+    let navigationController: NavigationController
+
+    init(navigationController: NavigationController) {
+        self.navigationController = navigationController
+    }
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -17,22 +22,26 @@ struct HomescreenView: View {
             .padding(.horizontal)
             .background(Color.purple.opacity(0.1))
             .navigationDestination(for: NavigationItem.self) { navigationItem in
-                switch navigationItem {
-                case .settings:
-                    SettingsView(path: $path)
-                case .languagePicker:
-                    LanguagePickerView(path: $path)
-                case .gameSetup(let gameMode):
-                    GameSetupView(
-                        path: $path,
-                        gameMode: gameMode
-                    )
-                case .game(let gameSource):
-                    GameView(
-                        path: $path,
-                        gameSource: gameSource
-                    )
-                }
+                // First Approach - When Homescreen uses navigationController to build navigation destinations
+                navigationController.navigate(to: navigationItem, path: $path)
+
+                // Second Approach - When Homescreen build navigation destinations by itself
+//                switch navigationItem {
+//                case .settings:
+//                    SettingsView(path: $path)
+//                case .languagePicker:
+//                    LanguagePickerView(path: $path)
+//                case .gameSetup(let gameMode):
+//                    GameSetupView(
+//                        path: $path,
+//                        gameMode: gameMode
+//                    )
+//                case .game(let gameSource):
+//                    GameView(
+//                        path: $path,
+//                        gameSource: gameSource
+//                    )
+//                }
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {

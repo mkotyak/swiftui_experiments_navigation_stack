@@ -4,7 +4,7 @@ import SwiftUI
 struct NavigationStackBasicApp: App {
     var body: some Scene {
         WindowGroup {
-            HomescreenView()
+            HomescreenView(navigationController: .init())
         }
     }
 }

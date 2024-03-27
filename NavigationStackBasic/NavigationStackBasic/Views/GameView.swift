@@ -39,6 +39,7 @@ struct GameView: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
+                    // First Approach - When Game manage deeplinking by itself
 //                    path = [
 //                        .gameSetup(.three),
 //                        .game(.pack(.init(
@@ -46,7 +47,8 @@ struct GameView: View {
 //                            cards: []
 //                        )))
 //                    ]
-                    
+
+                    // Second Approach - When Game posts notification aboud deeplinking to Homescreen manage it by itself
                     NotificationCenter.default.post(
                         name: .onDeeplinkOpening,
                         object: nil

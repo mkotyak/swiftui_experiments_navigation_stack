@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-final class HomescreenModuleBuilder {
+struct HomescreenModuleBuilder {
     func view() -> HomescreenModuleView {
         .init(
             viewModel: StateObject(wrappedValue: HomescreenModuleViewModel()),

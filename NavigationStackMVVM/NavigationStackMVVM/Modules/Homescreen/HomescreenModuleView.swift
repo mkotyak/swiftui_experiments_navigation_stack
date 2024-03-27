@@ -1,15 +1,19 @@
 import SwiftUI
 
 struct HomescreenModuleView: View {
-    @State var path: [NavigationItem] = []
-    let navigationController: NavigationController
+    @StateObject private var viewModel: HomescreenModuleViewModel
+    private let navigationController: NavigationController
 
-    init(navigationController: NavigationController) {
+    init(
+        viewModel: StateObject<HomescreenModuleViewModel>,
+        navigationController: NavigationController
+    ) {
+        self._viewModel = viewModel
         self.navigationController = navigationController
     }
 
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack(path: $viewModel.path) {
             VStack(spacing: 8) {
                 HeaderView(title: "Homescreen")
                 Spacer()
@@ -23,7 +27,7 @@ struct HomescreenModuleView: View {
             .background(Color.purple.opacity(0.1))
             .navigationDestination(for: NavigationItem.self) { navigationItem in
                 // First Approach - When Homescreen uses navigationController to build navigation destinations
-                navigationController.navigate(to: navigationItem, path: $path)
+                navigationController.navigate(to: navigationItem, path: $viewModel.path)
 
                 // Second Approach - When Homescreen build navigation destinations by itself
 //                switch navigationItem {
@@ -46,13 +50,7 @@ struct HomescreenModuleView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        path = [
-                            .gameSetup(.three),
-                            .game(.pack(.init(
-                                title: "Deeplink Pack",
-                                cards: []
-                            )))
-                        ]
+                        viewModel.viewDidSelectDeeplink()
                     } label: {
                         Image(systemName: "rectangle.portrait.and.arrow.forward")
                             .resizable()
@@ -61,25 +59,19 @@ struct HomescreenModuleView: View {
 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        path.append(.settings)
+                        viewModel.viewDidSelectSettings()
                     } label: {
                         Image(systemName: "gearshape")
                             .resizable()
                     }
                 }
             }
-            .onAppear {
-                subscribeOnDeeplinkOpening()
-            }
-            .onDisappear {
-                unsubscribeFromDeeplinkOpening()
-            }
         }
     }
 
     private func gameModeView(for gameMode: GameMode) -> some View {
         Button {
-            path.append(.gameSetup(gameMode))
+            viewModel.viewDidSelect(gameMode: gameMode)
         } label: {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(.white)
@@ -90,27 +82,5 @@ struct HomescreenModuleView: View {
                         .bold()
                 }
         }
-    }
-
-    // MARK: - Deeplink
-
-    private func subscribeOnDeeplinkOpening() {
-        NotificationCenter.default.addObserver(
-            forName: .onDeeplinkOpening,
-            object: nil,
-            queue: .main
-        ) { _ in
-            path = [
-                .gameSetup(.three),
-                .game(.pack(.init(
-                    title: "Deeplink Pack",
-                    cards: []
-                )))
-            ]
-        }
-    }
-
-    private func unsubscribeFromDeeplinkOpening() {
-        NotificationCenter.default.removeObserver(self)
     }
 }

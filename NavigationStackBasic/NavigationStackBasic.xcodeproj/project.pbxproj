@@ -21,6 +21,7 @@
 		7353917C2BB403F900E23357 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353917B2BB403F900E23357 /* BackButton.swift */; };
 		7353917F2BB4063300E23357 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353917E2BB4063300E23357 /* SettingsView.swift */; };
 		735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391802BB4070700E23357 /* LanguagePickerView.swift */; };
+		735391832BB4080F00E23357 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391822BB4080F00E23357 /* GameSetupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		7353917B2BB403F900E23357 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		7353917E2BB4063300E23357 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		735391802BB4070700E23357 /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
+		735391822BB4080F00E23357 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		7353916B2BB3FB4900E23357 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				735391822BB4080F00E23357 /* GameSetupView.swift */,
 				7353915E2BB3FACA00E23357 /* HomescreenView.swift */,
 				735391802BB4070700E23357 /* LanguagePickerView.swift */,
 				7353917E2BB4063300E23357 /* SettingsView.swift */,
@@ -203,6 +206,7 @@
 				7353917A2BB403E700E23357 /* HeaderView.swift in Sources */,
 				735391732BB3FCC300E23357 /* GameConfig.swift in Sources */,
 				7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */,
+				735391832BB4080F00E23357 /* GameSetupView.swift in Sources */,
 				735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */,
 				7353917C2BB403F900E23357 /* BackButton.swift in Sources */,
 				7353916F2BB3FB9700E23357 /* NavigationItem.swift in Sources */,

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Pack {
+struct Pack: Identifiable {
     let id: UUID
     let title: String
     let cards: [Card]

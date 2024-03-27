@@ -2,14 +2,12 @@ import Foundation
 
 struct GameConfig {
     let gameID: UUID = .init()
-    let gameCards: [Card]
+    let pack: Pack
 }
 
 extension GameConfig: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(gameID)
-        gameCards.forEach { card in
-            hasher.combine(card.hashValue)
-        }
+        hasher.combine(pack.hashValue)
     }
 }

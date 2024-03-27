@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353915C2BB3FACA00E23357 /* NavigationStackBasicApp.swift */; };
-		7353915F2BB3FACA00E23357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353915E2BB3FACA00E23357 /* ContentView.swift */; };
+		7353915F2BB3FACA00E23357 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353915E2BB3FACA00E23357 /* HomescreenView.swift */; };
 		735391612BB3FACB00E23357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735391602BB3FACB00E23357 /* Assets.xcassets */; };
 		735391642BB3FACB00E23357 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735391632BB3FACB00E23357 /* Preview Assets.xcassets */; };
+		7353916D2BB3FB7700E23357 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353916C2BB3FB7700E23357 /* GameMode.swift */; };
+		7353916F2BB3FB9700E23357 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353916E2BB3FB9600E23357 /* NavigationItem.swift */; };
+		735391712BB3FCA300E23357 /* GameSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391702BB3FCA300E23357 /* GameSource.swift */; };
+		735391732BB3FCC300E23357 /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391722BB3FCC300E23357 /* GameConfig.swift */; };
+		735391752BB3FD0200E23357 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391742BB3FD0200E23357 /* Pack.swift */; };
+		735391772BB3FD0700E23357 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391762BB3FD0700E23357 /* Card.swift */; };
+		7353917A2BB403E700E23357 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391792BB403E700E23357 /* HeaderView.swift */; };
+		7353917C2BB403F900E23357 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7353917B2BB403F900E23357 /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		735391592BB3FACA00E23357 /* NavigationStackBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7353915C2BB3FACA00E23357 /* NavigationStackBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBasicApp.swift; sourceTree = "<group>"; };
-		7353915E2BB3FACA00E23357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7353915E2BB3FACA00E23357 /* HomescreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenView.swift; sourceTree = "<group>"; };
 		735391602BB3FACB00E23357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		735391632BB3FACB00E23357 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7353916C2BB3FB7700E23357 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		7353916E2BB3FB9600E23357 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		735391702BB3FCA300E23357 /* GameSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSource.swift; sourceTree = "<group>"; };
+		735391722BB3FCC300E23357 /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		735391742BB3FD0200E23357 /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		735391762BB3FD0700E23357 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		735391792BB403E700E23357 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7353917B2BB403F900E23357 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				7353915C2BB3FACA00E23357 /* NavigationStackBasicApp.swift */,
-				7353915E2BB3FACA00E23357 /* ContentView.swift */,
 				735391602BB3FACB00E23357 /* Assets.xcassets */,
+				7353916A2BB3FB4200E23357 /* Models */,
 				735391622BB3FACB00E23357 /* Preview Content */,
+				735391782BB4039D00E23357 /* Services */,
+				7353916B2BB3FB4900E23357 /* Views */,
 			);
 			path = NavigationStackBasic;
 			sourceTree = "<group>";
@@ -65,6 +83,36 @@
 				735391632BB3FACB00E23357 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7353916A2BB3FB4200E23357 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				735391762BB3FD0700E23357 /* Card.swift */,
+				735391722BB3FCC300E23357 /* GameConfig.swift */,
+				7353916C2BB3FB7700E23357 /* GameMode.swift */,
+				735391702BB3FCA300E23357 /* GameSource.swift */,
+				7353916E2BB3FB9600E23357 /* NavigationItem.swift */,
+				735391742BB3FD0200E23357 /* Pack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7353916B2BB3FB4900E23357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7353917B2BB403F900E23357 /* BackButton.swift */,
+				735391792BB403E700E23357 /* HeaderView.swift */,
+				7353915E2BB3FACA00E23357 /* HomescreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		735391782BB4039D00E23357 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7353915F2BB3FACA00E23357 /* ContentView.swift in Sources */,
+				7353915F2BB3FACA00E23357 /* HomescreenView.swift in Sources */,
+				7353917A2BB403E700E23357 /* HeaderView.swift in Sources */,
+				735391732BB3FCC300E23357 /* GameConfig.swift in Sources */,
 				7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */,
+				7353917C2BB403F900E23357 /* BackButton.swift in Sources */,
+				7353916F2BB3FB9700E23357 /* NavigationItem.swift in Sources */,
+				735391752BB3FD0200E23357 /* Pack.swift in Sources */,
+				7353916D2BB3FB7700E23357 /* GameMode.swift in Sources */,
+				735391712BB3FCA300E23357 /* GameSource.swift in Sources */,
+				735391772BB3FD0700E23357 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +336,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +344,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +378,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackBasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

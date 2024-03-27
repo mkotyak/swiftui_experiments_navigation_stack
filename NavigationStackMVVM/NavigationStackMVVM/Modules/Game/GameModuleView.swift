@@ -1,16 +1,10 @@
 import SwiftUI
 
 struct GameModuleView: View {
-    @Binding var path: [NavigationItem]
-    let gameSource: GameSource
+    @StateObject private var viewModel: GameModuleViewModel
 
-    var title: String {
-        switch gameSource {
-        case .config(let config):
-            "Game from Config for \(config.pack.title)"
-        case .pack(let pack):
-            "Game for \(pack.title)"
-        }
+    init(viewModel: StateObject<GameModuleViewModel>) {
+        self._viewModel = viewModel
     }
 
     var body: some View {
@@ -19,7 +13,7 @@ struct GameModuleView: View {
             Spacer()
             HStack {
                 Spacer()
-                Text(title)
+                Text(viewModel.description)
                     .font(.headline)
                     .bold()
                     .multilineTextAlignment(.center)
@@ -33,26 +27,13 @@ struct GameModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    path.removeLast()
+                    viewModel.viewDidSelectLeave()
                 }
             }
 
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    // First Approach - When Game manage deeplinking by itself
-//                    path = [
-//                        .gameSetup(.three),
-//                        .game(.pack(.init(
-//                            title: "Deeplink Pack",
-//                            cards: []
-//                        )))
-//                    ]
-
-                    // Second Approach - When Game posts notification aboud deeplinking to Homescreen manage it by itself
-                    NotificationCenter.default.post(
-                        name: .onDeeplinkOpening,
-                        object: nil
-                    )
+                    viewModel.viewDidSelectDeeplink()
                 } label: {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }

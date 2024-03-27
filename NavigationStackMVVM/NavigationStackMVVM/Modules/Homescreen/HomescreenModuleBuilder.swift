@@ -8,7 +8,8 @@ struct HomescreenModuleBuilder {
             navigationController: .init(
                 settingsModuleBuilder: .init(),
                 languagePickerModuleBuilder: .init(),
-                gameSetupModuleBuilder: .init()
+                gameSetupModuleBuilder: .init(),
+                gameModuleBuilder: .init()
             )
         )
     }

@@ -35,6 +35,8 @@
 		73C774802BB436BC002AD4E3 /* GameSetupModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7747F2BB436BC002AD4E3 /* GameSetupModuleViewModel.swift */; };
 		73C774822BB436C2002AD4E3 /* GameSetupModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774812BB436C2002AD4E3 /* GameSetupModuleBuilder.swift */; };
 		73C774842BB436C9002AD4E3 /* GameSetupModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */; };
+		73C774862BB43AED002AD4E3 /* GameModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */; };
+		73C774882BB43AF4002AD4E3 /* GameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		73C7747F2BB436BC002AD4E3 /* GameSetupModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleViewModel.swift; sourceTree = "<group>"; };
 		73C774812BB436C2002AD4E3 /* GameSetupModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleBuilder.swift; sourceTree = "<group>"; };
 		73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleModel.swift; sourceTree = "<group>"; };
+		73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleViewModel.swift; sourceTree = "<group>"; };
+		73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +218,9 @@
 		73C774542BB41DAD002AD4E3 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */,
 				73C774692BB41EAB002AD4E3 /* GameModuleView.swift */,
+				73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				73C774562BB41DC8002AD4E3 /* BackButton.swift in Sources */,
 				73C7746C2BB41EDE002AD4E3 /* LanguagePickerModuleView.swift in Sources */,
 				73C774582BB41DD7002AD4E3 /* HeaderView.swift in Sources */,
+				73C774882BB43AF4002AD4E3 /* GameModuleBuilder.swift in Sources */,
+				73C774862BB43AED002AD4E3 /* GameModuleViewModel.swift in Sources */,
 				73C774842BB436C9002AD4E3 /* GameSetupModuleModel.swift in Sources */,
 				73C7746A2BB41EAB002AD4E3 /* GameModuleView.swift in Sources */,
 				73C774622BB41E50002AD4E3 /* GameSource.swift in Sources */,

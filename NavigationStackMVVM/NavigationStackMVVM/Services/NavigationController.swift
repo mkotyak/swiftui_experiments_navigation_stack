@@ -4,15 +4,18 @@ class NavigationController {
     private let settingsModuleBuilder: SettingsModuleBuilder
     private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
     private let gameSetupModuleBuilder: GameSetupModuleBuilder
+    private let gameModuleBuilder: GameModuleBuilder
 
     init(
         settingsModuleBuilder: SettingsModuleBuilder,
         languagePickerModuleBuilder: LanguagePickerModuleBuilder,
-        gameSetupModuleBuilder: GameSetupModuleBuilder
+        gameSetupModuleBuilder: GameSetupModuleBuilder,
+        gameModuleBuilder: GameModuleBuilder
     ) {
         self.settingsModuleBuilder = settingsModuleBuilder
         self.languagePickerModuleBuilder = languagePickerModuleBuilder
         self.gameSetupModuleBuilder = gameSetupModuleBuilder
+        self.gameModuleBuilder = gameModuleBuilder
     }
 
     @ViewBuilder
@@ -31,7 +34,7 @@ class NavigationController {
                 gameMode: gameMode
             )
         case .game(let gameSource):
-            GameModuleView(
+            gameModuleBuilder.view(
                 path: path,
                 gameSource: gameSource
             )

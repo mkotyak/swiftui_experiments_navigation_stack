@@ -39,7 +39,7 @@ struct HomescreenView: View {
                     Button {
                         debugPrint("Deeplink")
                     } label: {
-                        Image(systemName: "menucard")
+                        Image(systemName: "rectangle.portrait.and.arrow.forward")
                             .resizable()
                     }
                 }

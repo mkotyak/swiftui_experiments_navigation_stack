@@ -23,6 +23,7 @@
 		735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391802BB4070700E23357 /* LanguagePickerView.swift */; };
 		735391832BB4080F00E23357 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391822BB4080F00E23357 /* GameSetupView.swift */; };
 		735391852BB4091D00E23357 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391842BB4091D00E23357 /* GameView.swift */; };
+		735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		735391802BB4070700E23357 /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
 		735391822BB4080F00E23357 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
 		735391842BB4091D00E23357 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				7353915C2BB3FACA00E23357 /* NavigationStackBasicApp.swift */,
 				735391602BB3FACB00E23357 /* Assets.xcassets */,
+				735391862BB40F1300E23357 /* Extensions */,
 				7353916A2BB3FB4200E23357 /* Models */,
 				735391622BB3FACB00E23357 /* Preview Content */,
 				735391782BB4039D00E23357 /* Services */,
@@ -133,6 +136,14 @@
 				735391792BB403E700E23357 /* HeaderView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		735391862BB40F1300E23357 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				735391872BB40F2E00E23357 /* UINavigation+SwipeBack.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				735391732BB3FCC300E23357 /* GameConfig.swift in Sources */,
 				7353915D2BB3FACA00E23357 /* NavigationStackBasicApp.swift in Sources */,
 				735391832BB4080F00E23357 /* GameSetupView.swift in Sources */,
+				735391882BB40F2E00E23357 /* UINavigation+SwipeBack.swift in Sources */,
 				735391812BB4070700E23357 /* LanguagePickerView.swift in Sources */,
 				735391852BB4091D00E23357 /* GameView.swift in Sources */,
 				7353917C2BB403F900E23357 /* BackButton.swift in Sources */,

@@ -1,7 +1,7 @@
 import Foundation
 
 struct Pack: Identifiable {
-    let id: UUID
+    let id: UUID = .init()
     let title: String
     let cards: [Card]
 }

@@ -7,22 +7,35 @@ struct GameView: View {
     var title: String {
         switch gameSource {
         case .config(let config):
-            "Game from Game Config for \(config.pack.title)"
+            "Game from Config for \(config.pack.title)"
         case .pack(let pack):
             "Game for \(pack.title)"
         }
     }
 
     var body: some View {
-        Text("Game for \(title)")
-            .background(Color.green.opacity(0.1))
-            .navigationBarBackButtonHidden()
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    BackButton {
-                        path.removeLast()
-                    }
+        VStack {
+            HeaderView(title: "Game")
+            Spacer()
+            HStack {
+                Spacer()
+                Text(title)
+                    .font(.headline)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                Spacer()
+            }
+            Spacer()
+        }
+        .padding()
+        .background(Color.green.opacity(0.1))
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                BackButton {
+                    path.removeLast()
                 }
             }
+        }
     }
 }

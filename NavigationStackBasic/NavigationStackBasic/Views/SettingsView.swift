@@ -38,7 +38,7 @@ struct SettingsView: View {
         Button(action: action) {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(.white)
-                .shadow(color: .purple, radius: 5)
+                .shadow(color: .green, radius: 5)
                 .frame(height: 60)
                 .overlay {
                     Text(title)

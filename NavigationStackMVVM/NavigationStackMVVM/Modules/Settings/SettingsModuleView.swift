@@ -1,14 +1,18 @@
 import SwiftUI
 
 struct SettingsModuleView: View {
-    @Binding var path: [NavigationItem]
+    @StateObject private var viewModel: SettingsModuleViewModel
+    
+    init(viewModel: StateObject<SettingsModuleViewModel>) {
+        self._viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 20) {
             HeaderView(title: "Settings")
 
             settingsItem(title: "Language") {
-                path.append(.languagePicker)
+                viewModel.viewDidSelectLanguage()
             }
             settingsItem(title: "Rate Us") {
                 debugPrint("Rate Us")
@@ -25,7 +29,7 @@ struct SettingsModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    path.removeLast()
+                    viewModel.viewDidSelectLeave()
                 }
             }
         }

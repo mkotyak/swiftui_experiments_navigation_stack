@@ -28,6 +28,8 @@
 		73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */; };
 		73C774742BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774732BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift */; };
 		73C774762BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774752BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift */; };
+		73C774782BB432A4002AD4E3 /* SettingsModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774772BB432A4002AD4E3 /* SettingsModuleViewModel.swift */; };
+		73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Deeplink.swift"; sourceTree = "<group>"; };
 		73C774732BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleBuilder.swift; sourceTree = "<group>"; };
 		73C774752BB42DA5002AD4E3 /* HomescreenModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleViewModel.swift; sourceTree = "<group>"; };
+		73C774772BB432A4002AD4E3 /* SettingsModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleViewModel.swift; sourceTree = "<group>"; };
+		73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,9 @@
 		73C774512BB41D9A002AD4E3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				73C774792BB43306002AD4E3 /* SettingsModuleBuilder.swift */,
 				73C7746D2BB41EF1002AD4E3 /* SettingsModuleView.swift */,
+				73C774772BB432A4002AD4E3 /* SettingsModuleViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -275,11 +281,13 @@
 				73C7745C2BB41E2D002AD4E3 /* Card.swift in Sources */,
 				73C7746E2BB41EF1002AD4E3 /* SettingsModuleView.swift in Sources */,
 				73C7745E2BB41E3A002AD4E3 /* GameConfig.swift in Sources */,
+				73C774782BB432A4002AD4E3 /* SettingsModuleViewModel.swift in Sources */,
 				73C774742BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift in Sources */,
 				73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */,
 				73C7745A2BB41DED002AD4E3 /* NavigationController.swift in Sources */,
 				73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */,
 				73C774642BB41E5B002AD4E3 /* NavigationItem.swift in Sources */,
+				73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */,
 				73C774702BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift in Sources */,
 				73C774662BB41E67002AD4E3 /* Pack.swift in Sources */,
 				73C774562BB41DC8002AD4E3 /* BackButton.swift in Sources */,

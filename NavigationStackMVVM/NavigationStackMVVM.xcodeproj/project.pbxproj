@@ -37,6 +37,7 @@
 		73C774842BB436C9002AD4E3 /* GameSetupModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */; };
 		73C774862BB43AED002AD4E3 /* GameModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */; };
 		73C774882BB43AF4002AD4E3 /* GameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */; };
+		73C7748E2BB54C5B002AD4E3 /* NotificationName+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7748D2BB54C5B002AD4E3 /* NotificationName+Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		73C774832BB436C9002AD4E3 /* GameSetupModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleModel.swift; sourceTree = "<group>"; };
 		73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleViewModel.swift; sourceTree = "<group>"; };
 		73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleBuilder.swift; sourceTree = "<group>"; };
+		73C7748D2BB54C5B002AD4E3 /* NotificationName+Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Game.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +162,8 @@
 		73C7744E2BB41D7B002AD4E3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */,
-				73C7746F2BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift */,
+				73C7748C2BB54C4A002AD4E3 /* NotificationName */,
+				73C7748F2BB54C68002AD4E3 /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +225,23 @@
 				73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		73C7748C2BB54C4A002AD4E3 /* NotificationName */ = {
+			isa = PBXGroup;
+			children = (
+				73C774712BB41F2C002AD4E3 /* NotificationName+Deeplink.swift */,
+				73C7748D2BB54C5B002AD4E3 /* NotificationName+Game.swift */,
+			);
+			path = NotificationName;
+			sourceTree = "<group>";
+		};
+		73C7748F2BB54C68002AD4E3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				73C7746F2BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +322,7 @@
 				73C7746E2BB41EF1002AD4E3 /* SettingsModuleView.swift in Sources */,
 				73C7745E2BB41E3A002AD4E3 /* GameConfig.swift in Sources */,
 				73C774782BB432A4002AD4E3 /* SettingsModuleViewModel.swift in Sources */,
+				73C7748E2BB54C5B002AD4E3 /* NotificationName+Game.swift in Sources */,
 				73C7747C2BB434CC002AD4E3 /* LanguagePickerModuleViewModel.swift in Sources */,
 				73C774742BB42D5E002AD4E3 /* HomescreenModuleBuilder.swift in Sources */,
 				73C7743E2BB41983002AD4E3 /* NavigationStackMVVMApp.swift in Sources */,

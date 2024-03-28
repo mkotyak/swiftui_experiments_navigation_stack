@@ -30,20 +30,15 @@ final class GameModuleViewModel: ObservableObject {
     // MARK: - Intents
     
     func viewDidSelectLeave() {
+        NotificationCenter.default.post(
+            name: .onGameComplete,
+            object: nil
+        )
+        
         path.removeLast()
     }
     
     func viewDidSelectDeeplink() {
-        // First Approach - When Game manage deeplinking by itself
-//        path = [
-//            .gameSetup(.three),
-//            .game(.pack(.init(
-//                title: "Deeplink Pack",
-//                cards: []
-//            )))
-//        ]
-
-        // Second Approach - When Game posts notification aboud deeplinking to Homescreen manage it by itself
         NotificationCenter.default.post(
             name: .onDeeplinkOpening,
             object: nil

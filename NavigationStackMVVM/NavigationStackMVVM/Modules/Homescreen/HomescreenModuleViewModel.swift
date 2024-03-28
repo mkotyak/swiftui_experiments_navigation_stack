@@ -30,16 +30,6 @@ final class HomescreenModuleViewModel: ObservableObject {
         path.append(.settings)
     }
 
-    func viewDidSelectDeeplink() {
-        path = [
-            .gameSetup(.three),
-            .game(.pack(.init(
-                title: "Deeplink Pack",
-                cards: []
-            )))
-        ]
-    }
-
     // MARK: - Deeplink navigation
 
     private func subscribeOnDeeplinkOpening() {

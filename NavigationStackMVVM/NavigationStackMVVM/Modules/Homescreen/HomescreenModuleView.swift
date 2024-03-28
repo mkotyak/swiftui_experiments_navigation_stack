@@ -26,37 +26,9 @@ struct HomescreenModuleView: View {
             .padding(.horizontal)
             .background(Color.purple.opacity(0.1))
             .navigationDestination(for: NavigationItem.self) { navigationItem in
-                // First Approach - When Homescreen uses navigationController to build navigation destinations
                 navigationController.navigate(to: navigationItem, path: $viewModel.path)
-
-                // Second Approach - When Homescreen build navigation destinations by itself
-//                switch navigationItem {
-//                case .settings:
-//                    SettingsModuleBuilder().view(path: $viewModel.path)
-//                case .languagePicker:
-//                    LanguagePickerModuleBuilder().view(path: $viewModel.path)
-//                case .gameSetup(let gameMode):
-//                    GameSetupModuleBuilder().view(
-//                        path: $viewModel.path,
-//                        gameMode: gameMode
-//                    )
-//                case .game(let gameSource):
-//                    GameModuleBuilder().view(
-//                        path: $viewModel.path,
-//                        gameSource: gameSource
-//                    )
-//                }
             }
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        viewModel.viewDidSelectDeeplink()
-                    } label: {
-                        Image(systemName: "rectangle.portrait.and.arrow.forward")
-                            .resizable()
-                    }
-                }
-
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         viewModel.viewDidSelectSettings()

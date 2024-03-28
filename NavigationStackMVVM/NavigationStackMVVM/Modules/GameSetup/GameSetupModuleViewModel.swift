@@ -20,10 +20,12 @@ final class GameSetupModuleViewModel: ObservableObject {
         debugPrint("🚘 GameSetupModuleViewModel - INIT")
         self._path = path
         self.model = model
+        subscribeOnGameComplete()
     }
 
     deinit {
         debugPrint("🚘 GameSetupModuleViewModel - DEINIT")
+        unsubscribeFromGameComplete()
     }
 
     // MARK: Intents
@@ -39,19 +41,30 @@ final class GameSetupModuleViewModel: ObservableObject {
     }
 
     func viewDidSelectDeeplink() {
-        // First Approach - When GameSetup manage deeplinking by itself
-//        path = [
-//            .gameSetup(.three),
-//            .game(.pack(.init(
-//                title: "Deeplink Pack",
-//                cards: []
-//            )))
-//        ]
-
-        // Second Approach - When GameSetup posts notification aboud deeplinking to Homescreen manage it by itself
         NotificationCenter.default.post(
             name: .onDeeplinkOpening,
             object: nil
         )
+    }
+
+    // MARK: - Private
+
+    private func subscribeOnGameComplete() {
+        NotificationCenter.default.addObserver(
+            forName: .onGameComplete,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            guard let self else {
+                return
+            }
+
+            // Call some analytics events
+            debugPrint("🚘 GameSetupModuleViewModel - On Game Complete")
+        }
+    }
+
+    private func unsubscribeFromGameComplete() {
+        NotificationCenter.default.removeObserver(self)
     }
 }

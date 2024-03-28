@@ -32,7 +32,8 @@ final class GameSetupModuleViewModel: ObservableObject {
 
     func viewDidSelect(pack: Pack) {
         path.append(.game(
-            .config(.init(pack: pack))
+            gameSource: .config(.init(pack: pack)),
+            delegate: self
         ))
     }
 
@@ -54,17 +55,21 @@ final class GameSetupModuleViewModel: ObservableObject {
             forName: .onGameComplete,
             object: nil,
             queue: .main
-        ) { [weak self] _ in
-            guard let self else {
-                return
-            }
-
-            // Call some analytics events
-            debugPrint("🚘 GameSetupModuleViewModel - On Game Complete")
+        ) { _ in
+            // Made some changes according to the Game's result
+            debugPrint("🚘 GameSetupModuleViewModel: Notification - .onGameComplete")
         }
     }
 
     private func unsubscribeFromGameComplete() {
         NotificationCenter.default.removeObserver(self)
+    }
+}
+
+// MARK: - GameModuleDelegate
+
+extension GameSetupModuleViewModel: GameModuleDelegate {
+    func gameModuleDidComplete() {
+        debugPrint("🚘 GameSetupModuleViewModel: Delegate - gameModuleDidComplete")
     }
 }

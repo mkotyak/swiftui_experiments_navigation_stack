@@ -42,13 +42,16 @@ final class HomescreenModuleViewModel: ObservableObject {
                 return
             }
 
-            path = [
-                .gameSetup(.three),
-                .game(.pack(.init(
-                    title: "Deeplink Pack",
-                    cards: []
-                )))
-            ]
+//            path = [
+//                .gameSetup(.three),
+//                .game(
+//                    gameSource: .pack(.init(
+//                        title: "Deeplink Pack",
+//                        cards: []
+//                    )),
+//                    delegate: any GameModuleDelegate // Won't work , because HomescreenModule knows nothing about GameSetupModuleViewModel
+//                )
+//            ]
         }
     }
 

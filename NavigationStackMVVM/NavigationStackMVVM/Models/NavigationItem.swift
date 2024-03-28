@@ -4,7 +4,10 @@ enum NavigationItem {
     case settings
     case languagePicker
     case gameSetup(GameMode)
-    case game(GameSource)
+    case game(
+        gameSource: GameSource,
+        delegate: GameModuleDelegate
+    )
 
     var debugDescription: String {
         switch self {
@@ -14,7 +17,7 @@ enum NavigationItem {
             "PATH - LanguagePicker"
         case .gameSetup(let gameMode):
             "PATH - GameSetup mode: \(gameMode)"
-        case .game(let gameSource):
+        case .game(let gameSource, _):
             switch gameSource {
             case .config(let gameConfig):
                 "PATH - Game + Config: \(gameConfig.pack.title)"
@@ -35,9 +38,23 @@ extension NavigationItem: Hashable {
         case .gameSetup(let gameMode):
             hasher.combine("gameSetup")
             hasher.combine(gameMode.hashValue)
-        case .game(let gameSource):
+        case .game(let gameSource, _):
             hasher.combine("game")
             hasher.combine(gameSource.hashValue)
+        }
+    }
+
+    static func == (lhs: NavigationItem, rhs: NavigationItem) -> Bool {
+        switch (lhs, rhs) {
+        case (.settings, .settings),
+             (.languagePicker, .languagePicker):
+            return true
+        case (.gameSetup(let lhsGameMode), .gameSetup(let rhsGameMode)):
+            return lhsGameMode.hashValue == rhsGameMode.hashValue
+        case (.game(let lhsGameSource, _), .game(let rhsGameSource, _)):
+            return lhsGameSource.hashValue == rhsGameSource.hashValue
+        default:
+            return false
         }
     }
 }

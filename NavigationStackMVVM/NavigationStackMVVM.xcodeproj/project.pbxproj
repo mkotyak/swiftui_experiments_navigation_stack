@@ -38,6 +38,7 @@
 		73C774862BB43AED002AD4E3 /* GameModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */; };
 		73C774882BB43AF4002AD4E3 /* GameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */; };
 		73C7748E2BB54C5B002AD4E3 /* NotificationName+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7748D2BB54C5B002AD4E3 /* NotificationName+Game.swift */; };
+		73C774912BB55581002AD4E3 /* GameModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C774902BB55581002AD4E3 /* GameModuleDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleViewModel.swift; sourceTree = "<group>"; };
 		73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleBuilder.swift; sourceTree = "<group>"; };
 		73C7748D2BB54C5B002AD4E3 /* NotificationName+Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Game.swift"; sourceTree = "<group>"; };
+		73C774902BB55581002AD4E3 /* GameModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				73C774872BB43AF4002AD4E3 /* GameModuleBuilder.swift */,
 				73C774692BB41EAB002AD4E3 /* GameModuleView.swift */,
 				73C774852BB43AED002AD4E3 /* GameModuleViewModel.swift */,
+				73C774902BB55581002AD4E3 /* GameModuleDelegate.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				73C774722BB41F2C002AD4E3 /* NotificationName+Deeplink.swift in Sources */,
 				73C774822BB436C2002AD4E3 /* GameSetupModuleBuilder.swift in Sources */,
 				73C774642BB41E5B002AD4E3 /* NavigationItem.swift in Sources */,
+				73C774912BB55581002AD4E3 /* GameModuleDelegate.swift in Sources */,
 				73C7747A2BB43306002AD4E3 /* SettingsModuleBuilder.swift in Sources */,
 				73C774702BB41F1D002AD4E3 /* UINavigation+SwipeBack.swift in Sources */,
 				73C774662BB41E67002AD4E3 /* Pack.swift in Sources */,

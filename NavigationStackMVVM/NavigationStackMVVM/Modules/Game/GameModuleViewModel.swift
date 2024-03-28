@@ -4,6 +4,7 @@ import SwiftUI
 final class GameModuleViewModel: ObservableObject {
     @Binding private var path: [NavigationItem]
     private let gameSource: GameSource
+    private weak var delegate: GameModuleDelegate?
     
     var description: String {
         switch gameSource {
@@ -16,11 +17,13 @@ final class GameModuleViewModel: ObservableObject {
     
     init(
         path: Binding<[NavigationItem]>,
-        gameSource: GameSource
+        gameSource: GameSource,
+        delegate: GameModuleDelegate
     ) {
         debugPrint("🚘 GameModuleViewModel - INIT")
         self._path = path
         self.gameSource = gameSource
+        self.delegate = delegate
     }
     
     deinit {
@@ -30,10 +33,14 @@ final class GameModuleViewModel: ObservableObject {
     // MARK: - Intents
     
     func viewDidSelectLeave() {
-        NotificationCenter.default.post(
-            name: .onGameComplete,
-            object: nil
-        )
+        /// First approach - won't work for deeplink
+        delegate?.gameModuleDidComplete()
+        
+        /// Second approach
+//        NotificationCenter.default.post(
+//            name: .onGameComplete,
+//            object: nil
+//        )
         
         path.removeLast()
     }

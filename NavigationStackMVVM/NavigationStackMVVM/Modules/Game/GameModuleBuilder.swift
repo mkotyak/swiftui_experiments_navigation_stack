@@ -12,13 +12,15 @@ class GameModuleBuilder {
     
     func view(
         path: Binding<[NavigationItem]>,
-        gameSource: GameSource
+        gameSource: GameSource,
+        delegate: GameModuleDelegate
     ) -> GameModuleView {
         debugPrint("🚘 GameModuleBuilder - module builded")
         
         return GameModuleView(viewModel: StateObject(wrappedValue: GameModuleViewModel(
             path: path,
-            gameSource: gameSource
+            gameSource: gameSource,
+            delegate: delegate
         )))
     }
 }

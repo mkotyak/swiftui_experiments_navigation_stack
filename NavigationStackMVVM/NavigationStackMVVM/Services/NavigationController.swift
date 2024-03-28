@@ -34,10 +34,11 @@ struct NavigationController {
                 gameMode: gameMode
             )
             .id(navigationItem)
-        case .game(let gameSource):
+        case .game(let gameSource, let delegate):
             gameModuleBuilder.view(
                 path: path,
-                gameSource: gameSource
+                gameSource: gameSource,
+                delegate: delegate
             )
             .id(navigationItem)
         }

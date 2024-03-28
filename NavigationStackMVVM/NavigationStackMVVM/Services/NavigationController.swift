@@ -33,11 +33,13 @@ struct NavigationController {
                 path: path,
                 gameMode: gameMode
             )
+            .id(navigationItem)
         case .game(let gameSource):
             gameModuleBuilder.view(
                 path: path,
                 gameSource: gameSource
             )
+            .id(navigationItem)
         }
     }
 }

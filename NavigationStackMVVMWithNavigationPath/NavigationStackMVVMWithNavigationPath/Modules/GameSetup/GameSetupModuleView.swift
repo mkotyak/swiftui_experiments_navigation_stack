@@ -35,6 +35,7 @@ struct GameSetupModuleView: View {
                     gameSource: gameSource,
                     delegate: viewModel
                 )
+                .id(item)
             }
         }
         .toolbar {
@@ -43,7 +44,7 @@ struct GameSetupModuleView: View {
                     dismiss()
                 }
             }
-            
+
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     viewModel.viewDidSelectDeeplink()

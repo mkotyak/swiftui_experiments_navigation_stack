@@ -36,6 +36,7 @@ struct HomescreenModuleView: View {
                     settingsModuleBuilder.view()
                 case .gameSetup(let gameMode):
                     gameSetupModuleBuilder.view(gameMode: gameMode)
+                        .id(item)
                 }
             }
             .toolbar {

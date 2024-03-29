@@ -26,8 +26,13 @@ struct HomescreenModuleView: View {
             .padding(.horizontal)
             .background(Color.purple.opacity(0.1))
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: HomescreenModuleNavigationItem.self) { _ in
-                settingsModuleBuilder.view()
+            .navigationDestination(for: HomescreenModuleNavigationItem.self) { item in
+                switch item {
+                case .settings:
+                    settingsModuleBuilder.view()
+                case .gameSetup(let gameMode):
+                    Text("GameSetup for \(gameMode)")
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

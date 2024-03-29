@@ -4,8 +4,14 @@ struct SettingsModuleView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel: SettingsModuleViewModel
 
-    init(viewModel: StateObject<SettingsModuleViewModel>) {
+    private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
+
+    init(
+        viewModel: StateObject<SettingsModuleViewModel>,
+        languagePickerModuleBuilder: LanguagePickerModuleBuilder
+    ) {
         self._viewModel = viewModel
+        self.languagePickerModuleBuilder = languagePickerModuleBuilder
     }
 
     var body: some View {
@@ -17,8 +23,11 @@ struct SettingsModuleView: View {
         .padding(.horizontal)
         .background(Color.green.opacity(0.1))
         .navigationBarBackButtonHidden()
-        .navigationDestination(for: SettingsModuleNavigationItem.self) { _ in
-            Text("Language picker")
+        .navigationDestination(for: SettingsModuleNavigationItem.self) { item in
+            switch item {
+            case .languagePicker:
+                languagePickerModuleBuilder.view()
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

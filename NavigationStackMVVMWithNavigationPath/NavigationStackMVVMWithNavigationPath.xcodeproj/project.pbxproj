@@ -28,6 +28,8 @@
 		738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */; };
 		738170B92BB6BC9C00415B63 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */; };
 		738170BB2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170BA2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift */; };
+		738170BD2BB6C31100415B63 /* LanguagePickerModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170BC2BB6C31100415B63 /* LanguagePickerModuleView.swift */; };
+		738170BF2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170BE2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleViewModel.swift; sourceTree = "<group>"; };
 		738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
 		738170BA2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleNavigationItem.swift; sourceTree = "<group>"; };
+		738170BC2BB6C31100415B63 /* LanguagePickerModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleView.swift; sourceTree = "<group>"; };
+		738170BE2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 		735837D72BB6B21200A3546F /* LanguagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				738170BE2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift */,
+				738170BC2BB6C31100415B63 /* LanguagePickerModuleView.swift */,
 			);
 			path = LanguagePicker;
 			sourceTree = "<group>";
@@ -296,11 +302,13 @@
 				735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */,
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
 				735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */,
+				738170BD2BB6C31100415B63 /* LanguagePickerModuleView.swift in Sources */,
 				735837E12BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift in Sources */,
 				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
 				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
 				738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */,
+				738170BF2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,
 				735837C52BB6AF0400A3546F /* Card.swift in Sources */,
 			);

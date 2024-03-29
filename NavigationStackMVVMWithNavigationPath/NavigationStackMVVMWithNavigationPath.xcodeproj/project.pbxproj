@@ -41,6 +41,11 @@
 		738170D32BB6E56800415B63 /* GameModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170D22BB6E56800415B63 /* GameModuleDelegate.swift */; };
 		738170D62BB6EE8A00415B63 /* NotificationName+Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170D52BB6EE8A00415B63 /* NotificationName+Deeplink.swift */; };
 		738170D82BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170D72BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift */; };
+		738170DB2BB6F40B00415B63 /* PackDetailsModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170DA2BB6F40B00415B63 /* PackDetailsModuleView.swift */; };
+		738170DD2BB6F41300415B63 /* PackDetailsModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170DC2BB6F41300415B63 /* PackDetailsModuleViewModel.swift */; };
+		738170DF2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170DE2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift */; };
+		738170E12BB6F4D000415B63 /* PackDetailsModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170E02BB6F4D000415B63 /* PackDetailsModuleDelegate.swift */; };
+		738170E32BB6F5B700415B63 /* PackDetailsModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170E22BB6F5B700415B63 /* PackDetailsModuleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +84,11 @@
 		738170D22BB6E56800415B63 /* GameModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleDelegate.swift; sourceTree = "<group>"; };
 		738170D52BB6EE8A00415B63 /* NotificationName+Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Deeplink.swift"; sourceTree = "<group>"; };
 		738170D72BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleViewModel.swift; sourceTree = "<group>"; };
+		738170DA2BB6F40B00415B63 /* PackDetailsModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleView.swift; sourceTree = "<group>"; };
+		738170DC2BB6F41300415B63 /* PackDetailsModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleViewModel.swift; sourceTree = "<group>"; };
+		738170DE2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleBuilder.swift; sourceTree = "<group>"; };
+		738170E02BB6F4D000415B63 /* PackDetailsModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleDelegate.swift; sourceTree = "<group>"; };
+		738170E22BB6F5B700415B63 /* PackDetailsModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 				735837D82BB6B21900A3546F /* GameSetup */,
 				735837D52BB6B20600A3546F /* Homescreen */,
 				735837D72BB6B21200A3546F /* LanguagePicker */,
+				738170D92BB6F3F100415B63 /* PackDetails */,
 				735837D62BB6B20C00A3546F /* Settings */,
 			);
 			path = Modules;
@@ -261,6 +272,18 @@
 			path = NotificationName;
 			sourceTree = "<group>";
 		};
+		738170D92BB6F3F100415B63 /* PackDetails */ = {
+			isa = PBXGroup;
+			children = (
+				738170DE2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift */,
+				738170E02BB6F4D000415B63 /* PackDetailsModuleDelegate.swift */,
+				738170E22BB6F5B700415B63 /* PackDetailsModuleModel.swift */,
+				738170DA2BB6F40B00415B63 /* PackDetailsModuleView.swift */,
+				738170DC2BB6F41300415B63 /* PackDetailsModuleViewModel.swift */,
+			);
+			path = PackDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -331,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738170DD2BB6F41300415B63 /* PackDetailsModuleViewModel.swift in Sources */,
 				735837DB2BB6B23700A3546F /* HomescreenModuleView.swift in Sources */,
 				735837DD2BB6B24500A3546F /* HomescreenModuleViewModel.swift in Sources */,
 				738170B02BB6BA3800415B63 /* ActionWithHaptics.swift in Sources */,
@@ -345,6 +369,7 @@
 				738170C52BB6DB5900415B63 /* GameSetupModuleViewModel.swift in Sources */,
 				735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */,
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
+				738170DF2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift in Sources */,
 				738170D82BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift in Sources */,
 				738170C92BB6DB6800415B63 /* GameSetupModuleBuilder.swift in Sources */,
 				735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */,
@@ -354,10 +379,13 @@
 				735837E12BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift in Sources */,
 				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
+				738170E32BB6F5B700415B63 /* PackDetailsModuleModel.swift in Sources */,
 				738170D12BB6E48300415B63 /* GameModuleViewModel.swift in Sources */,
 				738170CF2BB6E47B00415B63 /* GameModuleBuilder.swift in Sources */,
 				738170CB2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift in Sources */,
+				738170E12BB6F4D000415B63 /* PackDetailsModuleDelegate.swift in Sources */,
 				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
+				738170DB2BB6F40B00415B63 /* PackDetailsModuleView.swift in Sources */,
 				738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */,
 				738170BF2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,

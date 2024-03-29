@@ -34,4 +34,11 @@ class GameModuleViewModel: ObservableObject {
         delegate?.gameModuleDidComplete()
         isGameCompleted = true
     }
+    
+    func viewDidSelectDeeplink() {
+        NotificationCenter.default.post(
+            name: .onDeeplinkOpening,
+            object: nil
+        )
+    }
 }

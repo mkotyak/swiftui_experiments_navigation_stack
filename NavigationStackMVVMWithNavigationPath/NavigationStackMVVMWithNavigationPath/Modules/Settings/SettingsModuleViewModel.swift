@@ -6,4 +6,11 @@ final class SettingsModuleViewModel: ObservableObject {
     func viewDidSelectLanguage() {
         debugPrint("SettingsModuleView did select Language")
     }
+    
+    func viewDidSelectDeeplink() {
+        NotificationCenter.default.post(
+            name: .onDeeplinkOpening,
+            object: nil
+        )
+    }
 }

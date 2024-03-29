@@ -28,6 +28,13 @@ final class GameSetupModuleViewModel: ObservableObject {
     func viewDidSelectPlay() {
         debugPrint("GameSetupModuleView did select play")
     }
+    
+    func viewDidSelectDeeplink() {
+        NotificationCenter.default.post(
+            name: .onDeeplinkOpening,
+            object: nil
+        )
+    }
 }
 
 // MARK: - GameModuleDelegate

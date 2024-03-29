@@ -43,6 +43,14 @@ struct GameSetupModuleView: View {
                     dismiss()
                 }
             }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    viewModel.viewDidSelectDeeplink()
+                } label: {
+                    Image(systemName: "rectangle.portrait.and.arrow.forward")
+                }
+            }
         }
     }
 

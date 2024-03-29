@@ -2,6 +2,11 @@ import SwiftUI
 
 struct LanguagePickerModuleView: View {
     @Environment(\.dismiss) var dismiss
+    @StateObject private var viewModel: LanguageModuleViewModel
+
+    init(viewModel: StateObject<LanguageModuleViewModel>) {
+        self._viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -32,6 +37,14 @@ struct LanguagePickerModuleView: View {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
                     dismiss()
+                }
+            }
+
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    viewModel.viewDidSelectDeeplink()
+                } label: {
+                    Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
             }
         }

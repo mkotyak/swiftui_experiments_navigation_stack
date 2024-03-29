@@ -16,6 +16,9 @@
 		735837C72BB6AF0B00A3546F /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837C62BB6AF0B00A3546F /* GameMode.swift */; };
 		735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837C82BB6AF1200A3546F /* GameConfig.swift */; };
 		735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837CA2BB6AF3F00A3546F /* GameSource.swift */; };
+		735837D02BB6B1B200A3546F /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */; };
+		735837D22BB6B1C700A3546F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837D12BB6B1C700A3546F /* BackButton.swift */; };
+		735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837D32BB6B1CD00A3546F /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		735837C62BB6AF0B00A3546F /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		735837C82BB6AF1200A3546F /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
 		735837CA2BB6AF3F00A3546F /* GameSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSource.swift; sourceTree = "<group>"; };
+		735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
+		735837D12BB6B1C700A3546F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		735837D32BB6B1CD00A3546F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		735837BE2BB6AED600A3546F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				735837D12BB6B1C700A3546F /* BackButton.swift */,
+				735837D32BB6B1CD00A3546F /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,8 +118,17 @@
 		735837C12BB6AEE500A3546F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				735837CE2BB6B1AC00A3546F /* UIKit */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		735837CE2BB6B1AC00A3546F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				735837C72BB6AF0B00A3546F /* GameMode.swift in Sources */,
+				735837D02BB6B1B200A3546F /* UINavigation+SwipeBack.swift in Sources */,
 				735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */,
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
 				735837B32BB6AE2200A3546F /* ContentView.swift in Sources */,
+				735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */,
+				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,
 				735837C52BB6AF0400A3546F /* Card.swift in Sources */,

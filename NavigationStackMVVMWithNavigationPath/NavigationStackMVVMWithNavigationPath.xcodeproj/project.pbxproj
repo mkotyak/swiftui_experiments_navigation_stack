@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837B02BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift */; };
-		735837B32BB6AE2200A3546F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837B22BB6AE2200A3546F /* ContentView.swift */; };
 		735837B52BB6AE2300A3546F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735837B42BB6AE2300A3546F /* Assets.xcassets */; };
 		735837B82BB6AE2300A3546F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735837B72BB6AE2300A3546F /* Preview Assets.xcassets */; };
 		735837C32BB6AEFB00A3546F /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837C22BB6AEFB00A3546F /* Pack.swift */; };
@@ -19,12 +18,17 @@
 		735837D02BB6B1B200A3546F /* UINavigation+SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */; };
 		735837D22BB6B1C700A3546F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837D12BB6B1C700A3546F /* BackButton.swift */; };
 		735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837D32BB6B1CD00A3546F /* HeaderView.swift */; };
+		735837DB2BB6B23700A3546F /* HomescreenModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837DA2BB6B23700A3546F /* HomescreenModuleView.swift */; };
+		735837DD2BB6B24500A3546F /* HomescreenModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837DC2BB6B24500A3546F /* HomescreenModuleViewModel.swift */; };
+		735837DF2BB6B25100A3546F /* HomescreenModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837DE2BB6B25100A3546F /* HomescreenModuleBuilder.swift */; };
+		735837E12BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */; };
+		738170B02BB6BA3800415B63 /* ActionWithHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170AF2BB6BA3800415B63 /* ActionWithHaptics.swift */; };
+		738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B22BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		735837AD2BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStackMVVMWithNavigationPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735837B02BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackMVVMWithNavigationPathApp.swift; sourceTree = "<group>"; };
-		735837B22BB6AE2200A3546F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		735837B42BB6AE2300A3546F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		735837B72BB6AE2300A3546F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		735837C22BB6AEFB00A3546F /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
@@ -35,6 +39,12 @@
 		735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+SwipeBack.swift"; sourceTree = "<group>"; };
 		735837D12BB6B1C700A3546F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		735837D32BB6B1CD00A3546F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		735837DA2BB6B23700A3546F /* HomescreenModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleView.swift; sourceTree = "<group>"; };
+		735837DC2BB6B24500A3546F /* HomescreenModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleViewModel.swift; sourceTree = "<group>"; };
+		735837DE2BB6B25100A3546F /* HomescreenModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleBuilder.swift; sourceTree = "<group>"; };
+		735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleNavigationItem.swift; sourceTree = "<group>"; };
+		738170AF2BB6BA3800415B63 /* ActionWithHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionWithHaptics.swift; sourceTree = "<group>"; };
+		738170B22BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ActionWiithHapticsViewModifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +77,13 @@
 		735837AF2BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPath */ = {
 			isa = PBXGroup;
 			children = (
-				735837B22BB6AE2200A3546F /* ContentView.swift */,
 				735837B02BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift */,
 				735837B42BB6AE2300A3546F /* Assets.xcassets */,
 				735837C12BB6AEE500A3546F /* Extensions */,
 				735837C02BB6AEE000A3546F /* Models */,
 				735837BF2BB6AEDB00A3546F /* Modules */,
 				735837B62BB6AE2300A3546F /* Preview Content */,
+				738170AE2BB6BA2B00415B63 /* ViewModifiers */,
 				735837BE2BB6AED600A3546F /* Views */,
 			);
 			path = NavigationStackMVVMWithNavigationPath;
@@ -99,6 +109,11 @@
 		735837BF2BB6AEDB00A3546F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				735837D92BB6B22000A3546F /* Game */,
+				735837D82BB6B21900A3546F /* GameSetup */,
+				735837D52BB6B20600A3546F /* Homescreen */,
+				735837D72BB6B21200A3546F /* LanguagePicker */,
+				735837D62BB6B20C00A3546F /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -118,6 +133,7 @@
 		735837C12BB6AEE500A3546F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				738170B12BB6BA9F00415B63 /* View */,
 				735837CE2BB6B1AC00A3546F /* UIKit */,
 			);
 			path = Extensions;
@@ -129,6 +145,61 @@
 				735837CF2BB6B1B200A3546F /* UINavigation+SwipeBack.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		735837D52BB6B20600A3546F /* Homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				735837DE2BB6B25100A3546F /* HomescreenModuleBuilder.swift */,
+				735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */,
+				735837DA2BB6B23700A3546F /* HomescreenModuleView.swift */,
+				735837DC2BB6B24500A3546F /* HomescreenModuleViewModel.swift */,
+			);
+			path = Homescreen;
+			sourceTree = "<group>";
+		};
+		735837D62BB6B20C00A3546F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		735837D72BB6B21200A3546F /* LanguagePicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LanguagePicker;
+			sourceTree = "<group>";
+		};
+		735837D82BB6B21900A3546F /* GameSetup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameSetup;
+			sourceTree = "<group>";
+		};
+		735837D92BB6B22000A3546F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		738170AE2BB6BA2B00415B63 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				738170AF2BB6BA3800415B63 /* ActionWithHaptics.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		738170B12BB6BA9F00415B63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				738170B22BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,14 +272,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735837DB2BB6B23700A3546F /* HomescreenModuleView.swift in Sources */,
+				735837DD2BB6B24500A3546F /* HomescreenModuleViewModel.swift in Sources */,
+				738170B02BB6BA3800415B63 /* ActionWithHaptics.swift in Sources */,
 				735837C72BB6AF0B00A3546F /* GameMode.swift in Sources */,
+				735837DF2BB6B25100A3546F /* HomescreenModuleBuilder.swift in Sources */,
 				735837D02BB6B1B200A3546F /* UINavigation+SwipeBack.swift in Sources */,
 				735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */,
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
-				735837B32BB6AE2200A3546F /* ContentView.swift in Sources */,
 				735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */,
+				735837E12BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift in Sources */,
 				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
+				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,
 				735837C52BB6AF0400A3546F /* Card.swift in Sources */,
 			);
@@ -269,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -326,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -350,8 +426,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,9 +436,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackMVVMWithNavigationPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,8 +460,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,9 +470,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NavigationStackMVVMWithNavigationPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -24,6 +24,10 @@
 		735837E12BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */; };
 		738170B02BB6BA3800415B63 /* ActionWithHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170AF2BB6BA3800415B63 /* ActionWithHaptics.swift */; };
 		738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B22BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift */; };
+		738170B52BB6BC8D00415B63 /* SettingsModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B42BB6BC8D00415B63 /* SettingsModuleView.swift */; };
+		738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */; };
+		738170B92BB6BC9C00415B63 /* SettingsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */; };
+		738170BB2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170BA2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleNavigationItem.swift; sourceTree = "<group>"; };
 		738170AF2BB6BA3800415B63 /* ActionWithHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionWithHaptics.swift; sourceTree = "<group>"; };
 		738170B22BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ActionWiithHapticsViewModifier.swift"; sourceTree = "<group>"; };
+		738170B42BB6BC8D00415B63 /* SettingsModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleView.swift; sourceTree = "<group>"; };
+		738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleViewModel.swift; sourceTree = "<group>"; };
+		738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleBuilder.swift; sourceTree = "<group>"; };
+		738170BA2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleNavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,10 @@
 		735837D62BB6B20C00A3546F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */,
+				738170BA2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift */,
+				738170B42BB6BC8D00415B63 /* SettingsModuleView.swift */,
+				738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -276,7 +288,10 @@
 				735837DD2BB6B24500A3546F /* HomescreenModuleViewModel.swift in Sources */,
 				738170B02BB6BA3800415B63 /* ActionWithHaptics.swift in Sources */,
 				735837C72BB6AF0B00A3546F /* GameMode.swift in Sources */,
+				738170B92BB6BC9C00415B63 /* SettingsModuleBuilder.swift in Sources */,
 				735837DF2BB6B25100A3546F /* HomescreenModuleBuilder.swift in Sources */,
+				738170BB2BB6BCA500415B63 /* SettingsModuleNavigationItem.swift in Sources */,
+				738170B52BB6BC8D00415B63 /* SettingsModuleView.swift in Sources */,
 				735837D02BB6B1B200A3546F /* UINavigation+SwipeBack.swift in Sources */,
 				735837C92BB6AF1200A3546F /* GameConfig.swift in Sources */,
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
@@ -285,6 +300,7 @@
 				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
 				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
+				738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,
 				735837C52BB6AF0400A3546F /* Card.swift in Sources */,
 			);

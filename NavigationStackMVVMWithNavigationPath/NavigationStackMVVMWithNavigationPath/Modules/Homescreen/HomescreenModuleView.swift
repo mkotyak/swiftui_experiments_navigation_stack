@@ -2,9 +2,14 @@ import SwiftUI
 
 struct HomescreenModuleView: View {
     @StateObject private var viewModel: HomescreenModuleViewModel
+    private let settingsModuleBuilder: SettingsModuleBuilder
 
-    init(viewModel: StateObject<HomescreenModuleViewModel>) {
+    init(
+        viewModel: StateObject<HomescreenModuleViewModel>,
+        settingsModuleBuilder: SettingsModuleBuilder
+    ) {
         self._viewModel = viewModel
+        self.settingsModuleBuilder = settingsModuleBuilder
     }
 
     var body: some View {
@@ -20,8 +25,9 @@ struct HomescreenModuleView: View {
             }
             .padding(.horizontal)
             .background(Color.purple.opacity(0.1))
-            .navigationDestination(for: HomescreenModuleNavigationItem.self) { navigationItem in
-                Text("\(navigationItem)")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: HomescreenModuleNavigationItem.self) { _ in
+                settingsModuleBuilder.view()
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

@@ -1,15 +1,11 @@
 import Foundation
 import SwiftUI
 
-final class HomescreenModuleBuilder {
+struct HomescreenModuleBuilder {
     init() {
-      debugPrint("🚘 HomescreenModuleBuilder - INIT")
+        debugPrint("🚘 HomescreenModuleBuilder - INIT")
     }
-    
-    deinit {
-        debugPrint("🚘 HomescreenModuleBuilder - DEINIT")
-    }
-    
+
     func view() -> HomescreenModuleView {
         HomescreenModuleView(
             viewModel: StateObject(wrappedValue: HomescreenModuleViewModel()),

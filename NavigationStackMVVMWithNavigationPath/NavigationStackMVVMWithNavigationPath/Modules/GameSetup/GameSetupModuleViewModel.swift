@@ -29,3 +29,11 @@ final class GameSetupModuleViewModel: ObservableObject {
         debugPrint("GameSetupModuleView did select play")
     }
 }
+
+// MARK: - GameModuleDelegate
+
+extension GameSetupModuleViewModel: GameModuleDelegate {
+    func gameModuleDidComplete() {
+        debugPrint("GameSetupModuleViewModel - Game module did complete")
+    }
+}

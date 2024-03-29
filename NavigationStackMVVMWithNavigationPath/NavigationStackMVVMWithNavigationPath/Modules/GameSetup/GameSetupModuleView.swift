@@ -4,8 +4,14 @@ struct GameSetupModuleView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel: GameSetupModuleViewModel
 
-    init(viewModel: StateObject<GameSetupModuleViewModel>) {
+    private let gameModuleBuilder: GameModuleBuilder
+
+    init(
+        viewModel: StateObject<GameSetupModuleViewModel>,
+        gameModuleBuilder: GameModuleBuilder
+    ) {
         self._viewModel = viewModel
+        self.gameModuleBuilder = gameModuleBuilder
     }
 
     var body: some View {
@@ -22,8 +28,14 @@ struct GameSetupModuleView: View {
         .padding([.horizontal, .bottom])
         .background(Color.orange.opacity(0.1))
         .navigationBarBackButtonHidden()
-        .navigationDestination(for: GameSetupModuleNavigationItem.self) { _ in
-            Text("Game")
+        .navigationDestination(for: GameSetupModuleNavigationItem.self) { item in
+            switch item {
+            case .game(let gameSource):
+                gameModuleBuilder.view(
+                    gameSource: gameSource,
+                    delegate: viewModel
+                )
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

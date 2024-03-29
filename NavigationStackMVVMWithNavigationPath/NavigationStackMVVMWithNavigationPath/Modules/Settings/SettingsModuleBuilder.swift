@@ -1,9 +1,13 @@
 import Foundation
 import SwiftUI
 
-struct SettingsModuleBuilder {
+final class SettingsModuleBuilder {
     init() {
         debugPrint("🚘 SettingsModuleBuilder - INIT")
+    }
+    
+    deinit {
+        debugPrint("🚘 SettingsModuleBuilder - DEINIT")
     }
 
     func view() -> SettingsModuleView {

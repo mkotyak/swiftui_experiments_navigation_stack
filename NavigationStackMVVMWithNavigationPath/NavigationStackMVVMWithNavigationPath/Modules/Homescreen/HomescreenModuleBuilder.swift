@@ -1,9 +1,13 @@
 import Foundation
 import SwiftUI
 
-struct HomescreenModuleBuilder {
+final class HomescreenModuleBuilder {
     init() {
         debugPrint("🚘 HomescreenModuleBuilder - INIT")
+    }
+
+    deinit {
+        debugPrint("🚘 HomescreenModuleBuilder - DEINIT")
     }
 
     func view() -> HomescreenModuleView {

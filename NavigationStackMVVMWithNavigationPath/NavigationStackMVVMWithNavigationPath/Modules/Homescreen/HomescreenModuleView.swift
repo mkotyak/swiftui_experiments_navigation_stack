@@ -2,14 +2,18 @@ import SwiftUI
 
 struct HomescreenModuleView: View {
     @StateObject private var viewModel: HomescreenModuleViewModel
+
     private let settingsModuleBuilder: SettingsModuleBuilder
+    private let gameSetupModuleBuilder: GameSetupModuleBuilder
 
     init(
         viewModel: StateObject<HomescreenModuleViewModel>,
-        settingsModuleBuilder: SettingsModuleBuilder
+        settingsModuleBuilder: SettingsModuleBuilder,
+        gameSetupModuleBuilder: GameSetupModuleBuilder
     ) {
         self._viewModel = viewModel
         self.settingsModuleBuilder = settingsModuleBuilder
+        self.gameSetupModuleBuilder = gameSetupModuleBuilder
     }
 
     var body: some View {
@@ -31,7 +35,7 @@ struct HomescreenModuleView: View {
                 case .settings:
                     settingsModuleBuilder.view()
                 case .gameSetup(let gameMode):
-                    Text("GameSetup for \(gameMode)")
+                    gameSetupModuleBuilder.view(gameMode: gameMode)
                 }
             }
             .toolbar {

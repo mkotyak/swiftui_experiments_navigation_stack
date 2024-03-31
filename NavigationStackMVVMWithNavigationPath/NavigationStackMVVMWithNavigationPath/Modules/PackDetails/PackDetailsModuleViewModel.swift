@@ -19,6 +19,6 @@ final class PackDetailsModuleViewModel: ObservableObject {
     // MARK: - Intents
 
     func viewDidSelectPlay() {
-        delegate?.packDetailsModuleDidSelectStartGame()
+        delegate?.packDetailsModuleDidSelectStartGame(with: model.pack)
     }
 }

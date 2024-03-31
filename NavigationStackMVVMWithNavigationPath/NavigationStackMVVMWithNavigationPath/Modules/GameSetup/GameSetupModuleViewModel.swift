@@ -2,6 +2,7 @@ import Foundation
 
 final class GameSetupModuleViewModel: ObservableObject {
     @Published var model: GameSetupModuleModel
+    @Published var sheetType: GameSetupModuleSheetType? = nil
     
     var packs: [Pack] {
         model.packs
@@ -22,7 +23,7 @@ final class GameSetupModuleViewModel: ObservableObject {
     // MARK: - Intents
     
     func viewDidSelect(pack: Pack) {
-        model.switchSelectionState(for: pack)
+        sheetType = .packDetails(pack: pack)
     }
     
     func viewDidSelectPlay() {
@@ -42,5 +43,14 @@ final class GameSetupModuleViewModel: ObservableObject {
 extension GameSetupModuleViewModel: GameModuleDelegate {
     func gameModuleDidComplete() {
         debugPrint("GameSetupModuleViewModel - Game module did complete")
+    }
+}
+
+// MARK: - PackDetailsModuleDelegate
+
+extension GameSetupModuleViewModel: PackDetailsModuleDelegate {
+    func packDetailsModuleDidSelectStartGame(with pack: Pack) {
+        // trigger navigation
+        sheetType = nil
     }
 }

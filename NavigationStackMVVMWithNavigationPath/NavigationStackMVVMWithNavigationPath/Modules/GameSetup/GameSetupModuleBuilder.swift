@@ -6,7 +6,8 @@ struct GameSetupModuleBuilder {
             viewModel: StateObject(wrappedValue: GameSetupModuleViewModel(
                 model: GameSetupModuleModel(gameMode: gameMode))
             ),
-            gameModuleBuilder: .init()
+            gameModuleBuilder: .init(),
+            packDetailsModuleBuilde: .init()
         )
     }
 }

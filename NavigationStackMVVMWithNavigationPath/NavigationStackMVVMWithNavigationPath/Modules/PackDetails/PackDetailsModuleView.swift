@@ -15,6 +15,7 @@ struct PackDetailsModuleView: View {
             Spacer()
             playButton
         }
+        .padding()
     }
     
     private var playButton: some View {

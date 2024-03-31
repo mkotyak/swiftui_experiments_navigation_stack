@@ -29,12 +29,4 @@ struct GameSetupModuleModel {
             ]),
         ]
     }
-    
-    mutating func switchSelectionState(for pack: Pack) {
-        guard let index = packs.firstIndex(where: { $0.id == pack.id }) else {
-            return
-        }
-        
-        packs[index].isSelected.toggle()
-    }
 }

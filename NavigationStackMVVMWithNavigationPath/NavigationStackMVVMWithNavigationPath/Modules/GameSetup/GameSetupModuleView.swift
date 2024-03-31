@@ -5,13 +5,16 @@ struct GameSetupModuleView: View {
     @StateObject private var viewModel: GameSetupModuleViewModel
 
     private let gameModuleBuilder: GameModuleBuilder
+    private let packDetailsModuleBuilder: PackDetailsModuleBuilder
 
     init(
         viewModel: StateObject<GameSetupModuleViewModel>,
-        gameModuleBuilder: GameModuleBuilder
+        gameModuleBuilder: GameModuleBuilder,
+        packDetailsModuleBuilde: PackDetailsModuleBuilder
     ) {
         self._viewModel = viewModel
         self.gameModuleBuilder = gameModuleBuilder
+        self.packDetailsModuleBuilder = packDetailsModuleBuilde
     }
 
     var body: some View {
@@ -51,6 +54,15 @@ struct GameSetupModuleView: View {
                 } label: {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
+            }
+        }
+        .sheet(item: $viewModel.sheetType) { type in
+            switch type {
+            case .packDetails(let pack):
+                packDetailsModuleBuilder.view(
+                    pack: pack,
+                    delegate: viewModel
+                )
             }
         }
     }

@@ -36,7 +36,9 @@ struct GameSetupModuleView: View {
         /// This navigationDestination is used for navigation from PackDetails sheet, to not inject @Binding on NavigationPath.
         /// @TODO: Need to update it to ".navigationDestination(item: Binding<Optional<Hashable>>, destination: (Hashable) -> View)" after we will support iOS 17* only
         .navigationDestination(isPresented: $viewModel.isNavigationItemAvailable) {
-            navigationDestination(for: viewModel.navigationItem)
+            if let item = viewModel.navigationItem {
+                navigationDestination(for: item)
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -77,15 +79,13 @@ struct GameSetupModuleView: View {
         }
     }
 
-    @ViewBuilder private func navigationDestination(for item: GameSetupModuleNavigationItem?) -> some View {
+    private func navigationDestination(for item: GameSetupModuleNavigationItem) -> some View {
         switch item {
         case .game(let gameSource):
             gameModuleBuilder.view(
                 gameSource: gameSource,
                 delegate: viewModel
             ).id(item)
-        case nil:
-            EmptyView()
         }
     }
 }

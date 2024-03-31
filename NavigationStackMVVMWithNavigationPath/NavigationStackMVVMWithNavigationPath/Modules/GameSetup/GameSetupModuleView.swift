@@ -26,29 +26,17 @@ struct GameSetupModuleView: View {
             }
             .padding(.vertical, 6)
             Spacer()
-            playButton
         }
         .padding([.horizontal, .bottom])
         .background(Color.orange.opacity(0.1))
         .navigationBarBackButtonHidden()
         .navigationDestination(for: GameSetupModuleNavigationItem.self) { item in
-            switch item {
-            case .game(let gameSource):
-                gameModuleBuilder.view(
-                    gameSource: gameSource,
-                    delegate: viewModel
-                )
-                .id(item)
-            }
+            navigationDestination(for: item)
         }
-        ///
+        /// This navigationDestination is used for navigation from PackDetails sheet, to not inject @Binding on NavigationPath.
+        /// @TODO: Need to update it to ".navigationDestination(item: Binding<Optional<Hashable>>, destination: (Hashable) -> View)" after we will support iOS 17* only
         .navigationDestination(isPresented: $viewModel.isNavigationItemAvailable) {
-            if case .game(let gameSource) = viewModel.navigationItem {
-                gameModuleBuilder.view(
-                    gameSource: gameSource,
-                    delegate: viewModel
-                )
-            }
+            navigationDestination(for: viewModel.navigationItem)
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -79,7 +67,7 @@ struct GameSetupModuleView: View {
             viewModel.viewDidSelect(pack: pack)
         } label: {
             RoundedRectangle(cornerRadius: 20)
-                .foregroundStyle(pack.isSelected ? .orange : .white)
+                .foregroundStyle(.white)
                 .shadow(color: .orange, radius: 5)
                 .overlay {
                     Text(pack.title)
@@ -89,24 +77,15 @@ struct GameSetupModuleView: View {
         }
     }
 
-    private var playButton: some View {
-        NavigationLink(value: GameSetupModuleNavigationItem.game(
-            gameSource: .config(
-                .init(packs: viewModel.selectedPacks))
-        )) {
-            RoundedRectangle(cornerRadius: 100)
-                .foregroundColor(.orange)
-                .frame(height: 54)
-                .frame(maxWidth: .infinity)
-                .overlay {
-                    Text(viewModel.selectedPacks.isEmpty
-                        ? "Play"
-                        : "Play (\(viewModel.selectedPacks.count))"
-                    )
-                    .font(.subheadline)
-                    .minimumScaleFactor(0.4)
-                    .padding(.horizontal, 8)
-                }
+    @ViewBuilder private func navigationDestination(for item: GameSetupModuleNavigationItem?) -> some View {
+        switch item {
+        case .game(let gameSource):
+            gameModuleBuilder.view(
+                gameSource: gameSource,
+                delegate: viewModel
+            ).id(item)
+        case nil:
+            EmptyView()
         }
     }
 }

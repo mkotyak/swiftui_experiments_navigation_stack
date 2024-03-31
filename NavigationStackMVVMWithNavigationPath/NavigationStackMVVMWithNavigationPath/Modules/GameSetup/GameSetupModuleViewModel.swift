@@ -15,10 +15,6 @@ final class GameSetupModuleViewModel: ObservableObject {
         model.packs
     }
     
-    var selectedPacks: [Pack] {
-        model.packs.filter { $0.isSelected }
-    }
-    
     var title: String {
         model.gameMode.title
     }

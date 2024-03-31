@@ -2,11 +2,7 @@ import Foundation
 import SwiftUI
 
 final class HomescreenModuleViewModel: ObservableObject {
-    @Published var path: NavigationPath = .init() {
-        didSet {
-            debugPrint("🚘 PATH - Count: \(path.count)")
-        }
-    }
+    @Published var path: NavigationPath = .init()
 
     init() {
         subscribeOnDeeplinkOpening()

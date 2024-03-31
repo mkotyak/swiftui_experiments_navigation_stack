@@ -3,6 +3,13 @@ import Foundation
 final class GameSetupModuleViewModel: ObservableObject {
     @Published var model: GameSetupModuleModel
     @Published var sheetType: GameSetupModuleSheetType? = nil
+    @Published var isNavigationItemAvailable: Bool = false
+    
+    var navigationItem: GameSetupModuleNavigationItem? {
+        didSet {
+            isNavigationItemAvailable = navigationItem != nil
+        }
+    }
     
     var packs: [Pack] {
         model.packs
@@ -43,6 +50,7 @@ final class GameSetupModuleViewModel: ObservableObject {
 extension GameSetupModuleViewModel: GameModuleDelegate {
     func gameModuleDidComplete() {
         debugPrint("GameSetupModuleViewModel - Game module did complete")
+        navigationItem = nil
     }
 }
 
@@ -50,7 +58,11 @@ extension GameSetupModuleViewModel: GameModuleDelegate {
 
 extension GameSetupModuleViewModel: PackDetailsModuleDelegate {
     func packDetailsModuleDidSelectStartGame(with pack: Pack) {
-        // trigger navigation
         sheetType = nil
+        navigationItem = .game(
+            gameSource: .config(
+                .init(packs: [pack])
+            )
+        )
     }
 }

@@ -10,7 +10,7 @@ class GameModuleViewModel: ObservableObject {
     var description: String {
         switch gameSource {
         case .config(let config):
-            "Game from Config for \(config.gameID)"
+            "Game from Config for: \(config.packs.map { $0.title }.joined(separator: ","))"
         case .pack(let pack):
             "Game for \(pack.title)"
         }

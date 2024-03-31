@@ -16,21 +16,8 @@ struct GameModuleView: View {
                 confirmationPopupView
             }
         }
-        .onAppear {
-            UINavigationControllerConstants.isSwipeBackEnabled = false
-        }
-        .onDisappear {
-            UINavigationControllerConstants.isSwipeBackEnabled = true
-        }
         .background(Color.red.opacity(0.1))
         .navigationBarBackButtonHidden()
-        .onChange(of: viewModel.isGameCompleted, perform: { newValue in
-            guard newValue == true else {
-                return
-            }
-
-            dismiss()
-        })
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
@@ -39,7 +26,7 @@ struct GameModuleView: View {
                     }
                 }
             }
-            
+
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     viewModel.viewDidSelectDeeplink()
@@ -47,6 +34,19 @@ struct GameModuleView: View {
                     Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
             }
+        }
+        .onAppear {
+            UINavigationControllerConstants.isSwipeBackEnabled = false
+        }
+        .onDisappear {
+            UINavigationControllerConstants.isSwipeBackEnabled = true
+        }
+        .onChange(of: viewModel.isGameCompleted) { newValue in
+            guard newValue == true else {
+                return
+            }
+
+            dismiss()
         }
     }
 

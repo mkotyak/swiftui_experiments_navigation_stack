@@ -41,6 +41,15 @@ struct GameSetupModuleView: View {
                 .id(item)
             }
         }
+        ///
+        .navigationDestination(isPresented: $viewModel.isNavigationItemAvailable) {
+            if case .game(let gameSource) = viewModel.navigationItem {
+                gameModuleBuilder.view(
+                    gameSource: gameSource,
+                    delegate: viewModel
+                )
+            }
+        }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {

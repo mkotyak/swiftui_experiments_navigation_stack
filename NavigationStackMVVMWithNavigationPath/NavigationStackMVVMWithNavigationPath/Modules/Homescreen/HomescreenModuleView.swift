@@ -45,10 +45,8 @@ struct HomescreenModuleView: View {
                 }
 
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
+                    DeeplinkButton {
                         viewModel.viewDidSelectDeeplink()
-                    } label: {
-                        Image(systemName: "rectangle.portrait.and.arrow.forward")
                     }
                 }
             }

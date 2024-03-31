@@ -35,12 +35,10 @@ struct SettingsModuleView: View {
                     dismiss()
                 }
             }
-            
+
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
+                DeeplinkButton {
                     viewModel.viewDidSelectDeeplink()
-                } label: {
-                    Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
             }
         }

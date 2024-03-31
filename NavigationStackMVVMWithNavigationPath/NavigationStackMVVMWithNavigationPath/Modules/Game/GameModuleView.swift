@@ -28,10 +28,8 @@ struct GameModuleView: View {
             }
 
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
+                DeeplinkButton {
                     viewModel.viewDidSelectDeeplink()
-                } label: {
-                    Image(systemName: "rectangle.portrait.and.arrow.forward")
                 }
             }
         }

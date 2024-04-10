@@ -4,7 +4,7 @@ import SwiftUI
 struct NavigationStackMVVMWithNavigationPathApp: App {
     var body: some Scene {
         WindowGroup {
-            HomescreenModuleBuilder().view()
+            HomescreenModuleBuilder(parentAssembler: .init()).view()
         }
     }
 }

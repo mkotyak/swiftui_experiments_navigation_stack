@@ -4,17 +4,21 @@ struct SettingsModuleView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: SettingsModuleViewModel
 
+    private let languagePickerModuleBuilderAssemblerable: LanguagePickerModuleBuilderAssemblerable
     private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
 
     init(
         viewModel: StateObject<SettingsModuleViewModel>,
+        languagePickerModuleBuilderAssemblerable: LanguagePickerModuleBuilderAssemblerable,
         languagePickerModuleBuilder: LanguagePickerModuleBuilder
     ) {
         self._viewModel = viewModel
+        self.languagePickerModuleBuilderAssemblerable = languagePickerModuleBuilderAssemblerable
         self.languagePickerModuleBuilder = languagePickerModuleBuilder
     }
 
     var body: some View {
+        let _ = Self._printChanges()
         VStack {
             HeaderView(title: "Settings")
             settingsItemsView
@@ -24,6 +28,7 @@ struct SettingsModuleView: View {
         .background(Color.green.opacity(0.1))
         .navigationBarBackButtonHidden()
         .navigationDestination(isPresented: $viewModel.isLanguagePickerDisplayed) {
+//            languagePickerModuleBuilderAssemblerable.view(delegate: viewModel)
             languagePickerModuleBuilder.view(delegate: viewModel)
         }
         .toolbar {

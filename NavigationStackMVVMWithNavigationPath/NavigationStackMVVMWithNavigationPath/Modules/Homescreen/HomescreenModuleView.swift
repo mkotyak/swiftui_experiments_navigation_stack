@@ -17,6 +17,7 @@ struct HomescreenModuleView: View {
     }
 
     var body: some View {
+        let _ = Self._printChanges()
         NavigationStack(path: $viewModel.path) {
             VStack(spacing: 8) {
                 HeaderView(title: "Homescreen")

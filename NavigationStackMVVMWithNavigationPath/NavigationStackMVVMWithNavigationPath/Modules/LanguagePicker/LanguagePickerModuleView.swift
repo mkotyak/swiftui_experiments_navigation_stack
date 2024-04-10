@@ -9,6 +9,7 @@ struct LanguagePickerModuleView: View {
     }
 
     var body: some View {
+        let _ = Self._printChanges()
         VStack(spacing: 20) {
             HeaderView(title: "Select Language")
 

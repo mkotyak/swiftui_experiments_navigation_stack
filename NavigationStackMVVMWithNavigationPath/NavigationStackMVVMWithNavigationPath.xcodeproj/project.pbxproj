@@ -48,6 +48,13 @@
 		738170E52BB977FB00415B63 /* GameSetupModuleSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170E42BB977FB00415B63 /* GameSetupModuleSheetType.swift */; };
 		738170E72BB992F100415B63 /* DeeplinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170E62BB992F100415B63 /* DeeplinkButton.swift */; };
 		739599FD2BC6755400440B9C /* LanguagePickerModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739599FC2BC6755400440B9C /* LanguagePickerModuleDelegate.swift */; };
+		73959A012BC6821B00440B9C /* Assemblerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A002BC6821B00440B9C /* Assemblerable.swift */; };
+		73959A052BC683D900440B9C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 73959A042BC683D900440B9C /* Swinject */; };
+		73959A092BC684F200440B9C /* HomescreenModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A082BC684F200440B9C /* HomescreenModuleAssembly.swift */; };
+		73959A0B2BC686C600440B9C /* SettingsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0A2BC686C600440B9C /* SettingsModuleAssembly.swift */; };
+		73959A0D2BC6877800440B9C /* LanguagePickerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */; };
+		73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0E2BC6880300440B9C /* DependencyAssembly.swift */; };
+		73959A112BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +100,12 @@
 		738170E42BB977FB00415B63 /* GameSetupModuleSheetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleSheetType.swift; sourceTree = "<group>"; };
 		738170E62BB992F100415B63 /* DeeplinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkButton.swift; sourceTree = "<group>"; };
 		739599FC2BC6755400440B9C /* LanguagePickerModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleDelegate.swift; sourceTree = "<group>"; };
+		73959A002BC6821B00440B9C /* Assemblerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblerable.swift; sourceTree = "<group>"; };
+		73959A082BC684F200440B9C /* HomescreenModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenModuleAssembly.swift; sourceTree = "<group>"; };
+		73959A0A2BC686C600440B9C /* SettingsModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleAssembly.swift; sourceTree = "<group>"; };
+		73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleAssembly.swift; sourceTree = "<group>"; };
+		73959A0E2BC6880300440B9C /* DependencyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyAssembly.swift; sourceTree = "<group>"; };
+		73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilderAssemblerable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73959A052BC683D900440B9C /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +145,7 @@
 				735837C02BB6AEE000A3546F /* Models */,
 				735837BF2BB6AEDB00A3546F /* Modules */,
 				735837B62BB6AE2300A3546F /* Preview Content */,
+				739599FF2BC6820F00440B9C /* Services */,
 				738170AE2BB6BA2B00415B63 /* ViewModifiers */,
 				735837BE2BB6AED600A3546F /* Views */,
 			);
@@ -201,6 +216,7 @@
 		735837D52BB6B20600A3546F /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
+				73959A082BC684F200440B9C /* HomescreenModuleAssembly.swift */,
 				735837DE2BB6B25100A3546F /* HomescreenModuleBuilder.swift */,
 				735837E02BB6B26A00A3546F /* HomescreenModuleNavigationItem.swift */,
 				735837DA2BB6B23700A3546F /* HomescreenModuleView.swift */,
@@ -212,6 +228,7 @@
 		735837D62BB6B20C00A3546F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				73959A0A2BC686C600440B9C /* SettingsModuleAssembly.swift */,
 				738170B82BB6BC9C00415B63 /* SettingsModuleBuilder.swift */,
 				738170B42BB6BC8D00415B63 /* SettingsModuleView.swift */,
 				738170B62BB6BC9400415B63 /* SettingsModuleViewModel.swift */,
@@ -222,7 +239,9 @@
 		735837D72BB6B21200A3546F /* LanguagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */,
 				738170BE2BB6C31D00415B63 /* LanguagePickerModuleBuilder.swift */,
+				73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */,
 				739599FC2BC6755400440B9C /* LanguagePickerModuleDelegate.swift */,
 				738170BC2BB6C31100415B63 /* LanguagePickerModuleView.swift */,
 				738170D72BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift */,
@@ -290,6 +309,15 @@
 			path = PackDetails;
 			sourceTree = "<group>";
 		};
+		739599FF2BC6820F00440B9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				73959A002BC6821B00440B9C /* Assemblerable.swift */,
+				73959A0E2BC6880300440B9C /* DependencyAssembly.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +334,9 @@
 			dependencies = (
 			);
 			name = NavigationStackMVVMWithNavigationPath;
+			packageProductDependencies = (
+				73959A042BC683D900440B9C /* Swinject */,
+			);
 			productName = NavigationStackMVVMWithNavigationPath;
 			productReference = 735837AD2BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPath.app */;
 			productType = "com.apple.product-type.application";
@@ -334,6 +365,9 @@
 				Base,
 			);
 			mainGroup = 735837A42BB6AE2200A3546F;
+			packageReferences = (
+				73959A032BC683D900440B9C /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 735837AE2BB6AE2200A3546F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +410,7 @@
 				735837CB2BB6AF3F00A3546F /* GameSource.swift in Sources */,
 				738170DF2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift in Sources */,
 				739599FD2BC6755400440B9C /* LanguagePickerModuleDelegate.swift in Sources */,
+				73959A012BC6821B00440B9C /* Assemblerable.swift in Sources */,
 				738170D82BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift in Sources */,
 				738170C92BB6DB6800415B63 /* GameSetupModuleBuilder.swift in Sources */,
 				735837D42BB6B1CD00A3546F /* HeaderView.swift in Sources */,
@@ -387,9 +422,14 @@
 				738170E52BB977FB00415B63 /* GameSetupModuleSheetType.swift in Sources */,
 				735837D22BB6B1C700A3546F /* BackButton.swift in Sources */,
 				735837B12BB6AE2200A3546F /* NavigationStackMVVMWithNavigationPathApp.swift in Sources */,
+				73959A0D2BC6877800440B9C /* LanguagePickerModuleAssembly.swift in Sources */,
+				73959A0B2BC686C600440B9C /* SettingsModuleAssembly.swift in Sources */,
+				73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */,
 				738170E32BB6F5B700415B63 /* PackDetailsModuleModel.swift in Sources */,
+				73959A112BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift in Sources */,
 				738170D12BB6E48300415B63 /* GameModuleViewModel.swift in Sources */,
 				738170CF2BB6E47B00415B63 /* GameModuleBuilder.swift in Sources */,
+				73959A092BC684F200440B9C /* HomescreenModuleAssembly.swift in Sources */,
 				738170CB2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift in Sources */,
 				738170E12BB6F4D000415B63 /* PackDetailsModuleDelegate.swift in Sources */,
 				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
@@ -614,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73959A032BC683D900440B9C /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73959A042BC683D900440B9C /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73959A032BC683D900440B9C /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 735837A52BB6AE2200A3546F /* Project object */;
 }

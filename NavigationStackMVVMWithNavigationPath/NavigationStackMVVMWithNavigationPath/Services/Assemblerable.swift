@@ -25,3 +25,14 @@ extension Assemblerable {
         assembler.resolver.resolve(serviceType)
     }
 }
+
+protocol ModuleBuilderProtocol: Assemblerable, Hashable {}
+extension ModuleBuilderProtocol {
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        true
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(String(describing: self))
+    }
+}

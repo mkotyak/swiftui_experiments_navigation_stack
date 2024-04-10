@@ -1,7 +1,7 @@
 import SwiftUI
 import Swinject
 
-struct HomescreenModuleBuilder: Assemblerable {
+struct HomescreenModuleBuilder: ModuleBuilderProtocol {
     let assembler: Assembler
 
     var assembly: Assembly? {
@@ -20,3 +20,14 @@ struct HomescreenModuleBuilder: Assemblerable {
         )
     }
 }
+
+//
+//extension HomescreenModuleBuilder: Hashable {
+//    static func == (lhs: Self, rhs: Self) -> Bool {
+//        true
+//    }
+//
+//    func hash(into hasher: inout Hasher) {
+//        hasher.combine(String(describing: self))
+//    }
+//}

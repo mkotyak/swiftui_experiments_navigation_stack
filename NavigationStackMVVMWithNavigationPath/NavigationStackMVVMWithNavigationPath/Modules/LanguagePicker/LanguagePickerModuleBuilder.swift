@@ -1,7 +1,7 @@
 import SwiftUI
 import Swinject
 
-struct LanguagePickerModuleBuilder: Assemblerable {
+struct LanguagePickerModuleBuilder: ModuleBuilderProtocol {
     let assembler: Assembler
 
     var assembly: Assembly? {
@@ -23,6 +23,16 @@ struct LanguagePickerModuleBuilder: Assemblerable {
         )
     }
 }
+//
+//extension LanguagePickerModuleBuilder: Hashable {
+//    static func == (lhs: Self, rhs: Self) -> Bool {
+//        true
+//    }
+//
+//    func hash(into hasher: inout Hasher) {
+//        hasher.combine(String(describing: self))
+//    }
+//}
 
 // struct LanguagePickerModuleBuilder {
 //    func view(delegate: LanguagePickerModuleDelegate) -> LanguagePickerModuleView {

@@ -18,8 +18,18 @@ struct LanguagePickerModuleBuilder: Assemblerable {
 
         return LanguagePickerModuleView(
             viewModel: StateObject(wrappedValue:
-                viewModelAssembler.resolver.resolve(LanguageModuleViewModel.self)!
+                viewModelAssembler.resolver.resolve(LanguagePickerModuleViewModel.self)!
             )
         )
     }
 }
+
+// struct LanguagePickerModuleBuilder {
+//    func view(delegate: LanguagePickerModuleDelegate) -> LanguagePickerModuleView {
+//        LanguagePickerModuleView(
+//            viewModel: StateObject(wrappedValue:
+//                LanguageModuleViewModel(delegate: delegate)
+//            )
+//        )
+//    }
+// }

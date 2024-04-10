@@ -2,8 +2,8 @@ import Swinject
 
 final class LanguagePickerModuleAssembly: Assembly {
     func assemble(container: Swinject.Container) {
-        container.register(LanguageModuleViewModel.self) { resolver in
-            LanguageModuleViewModel(
+        container.register(LanguagePickerModuleViewModel.self) { resolver in
+            LanguagePickerModuleViewModel(
                 delegate: resolver.resolve(LanguagePickerModuleDelegate.self)!
             )
         }

@@ -16,6 +16,7 @@ struct SettingsModuleBuilder: Assemblerable {
         SettingsModuleView(
             viewModel: StateObject(wrappedValue: resolve(SettingsModuleViewModel.self)!),
             LanguagePickerModuleBuilder: LanguagePickerModuleBuilder(parentAssembler: assembler)
+//            LanguagePickerModuleBuilder: LanguagePickerModuleBuilder()
         )
     }
 }

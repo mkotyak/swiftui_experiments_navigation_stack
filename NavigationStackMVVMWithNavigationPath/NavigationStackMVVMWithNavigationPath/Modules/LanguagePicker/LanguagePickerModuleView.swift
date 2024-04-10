@@ -2,9 +2,9 @@ import SwiftUI
 
 struct LanguagePickerModuleView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @StateObject private var viewModel: LanguageModuleViewModel
+    @StateObject private var viewModel: LanguagePickerModuleViewModel
 
-    init(viewModel: StateObject<LanguageModuleViewModel>) {
+    init(viewModel: StateObject<LanguagePickerModuleViewModel>) {
         self._viewModel = viewModel
     }
 

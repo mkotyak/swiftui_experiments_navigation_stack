@@ -1,6 +1,6 @@
 import Foundation
 
-final class LanguageModuleViewModel: ObservableObject {
+final class LanguagePickerModuleViewModel: ObservableObject {
     private weak var delegate: LanguagePickerModuleDelegate?
 
     init(delegate: LanguagePickerModuleDelegate) {

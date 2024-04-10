@@ -65,14 +65,14 @@ extension HomescreenModuleViewModel {
     }
 }
 
-extension HomescreenModuleViewModel: Hashable {
-    static func == (lhs: HomescreenModuleViewModel, rhs: HomescreenModuleViewModel) -> Bool {
-//        Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
-        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-    }
-
-    func hash(into hasher: inout Hasher) {
-//        hasher.combine(Unmanaged.passUnretained(self).toOpaque())
-        hasher.combine(ObjectIdentifier(self))
-    }
-}
+//extension HomescreenModuleViewModel: Hashable {
+//    static func == (lhs: HomescreenModuleViewModel, rhs: HomescreenModuleViewModel) -> Bool {
+////        Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
+//        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+//    }
+//
+//    func hash(into hasher: inout Hasher) {
+////        hasher.combine(Unmanaged.passUnretained(self).toOpaque())
+//        hasher.combine(ObjectIdentifier(self))
+//    }
+//}

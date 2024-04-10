@@ -4,14 +4,14 @@ struct SettingsModuleView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: SettingsModuleViewModel
 
-    private let languagePickerModuleBuilderAssemblerable: LanguagePickerModuleBuilderAssemblerable
+    private let LanguagePickerModuleBuilder: LanguagePickerModuleBuilder
 
     init(
         viewModel: StateObject<SettingsModuleViewModel>,
-        languagePickerModuleBuilderAssemblerable: LanguagePickerModuleBuilderAssemblerable
+        LanguagePickerModuleBuilder: LanguagePickerModuleBuilder
     ) {
         self._viewModel = viewModel
-        self.languagePickerModuleBuilderAssemblerable = languagePickerModuleBuilderAssemblerable
+        self.LanguagePickerModuleBuilder = LanguagePickerModuleBuilder
     }
 
     var body: some View {
@@ -25,7 +25,7 @@ struct SettingsModuleView: View {
         .background(Color.green.opacity(0.1))
         .navigationBarBackButtonHidden()
         .navigationDestination(isPresented: $viewModel.isLanguagePickerDisplayed) {
-            languagePickerModuleBuilderAssemblerable.view(delegate: viewModel)
+            LanguagePickerModuleBuilder.view(delegate: viewModel)
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

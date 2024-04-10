@@ -15,7 +15,7 @@ struct SettingsModuleBuilder: Assemblerable {
     func view() -> SettingsModuleView {
         SettingsModuleView(
             viewModel: StateObject(wrappedValue: resolve(SettingsModuleViewModel.self)!),
-            languagePickerModuleBuilderAssemblerable: LanguagePickerModuleBuilderAssemblerable(parentAssembler: assembler)
+            LanguagePickerModuleBuilder: LanguagePickerModuleBuilder(parentAssembler: assembler)
         )
     }
 }

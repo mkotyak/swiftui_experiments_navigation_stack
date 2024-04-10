@@ -53,7 +53,7 @@
 		73959A0B2BC686C600440B9C /* SettingsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0A2BC686C600440B9C /* SettingsModuleAssembly.swift */; };
 		73959A0D2BC6877800440B9C /* LanguagePickerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */; };
 		73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0E2BC6880300440B9C /* DependencyAssembly.swift */; };
-		73959A112BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */; };
+		73959A112BC6897C00440B9C /* LanguagePickerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A102BC6897C00440B9C /* LanguagePickerModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +103,7 @@
 		73959A0A2BC686C600440B9C /* SettingsModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModuleAssembly.swift; sourceTree = "<group>"; };
 		73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleAssembly.swift; sourceTree = "<group>"; };
 		73959A0E2BC6880300440B9C /* DependencyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyAssembly.swift; sourceTree = "<group>"; };
-		73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilderAssemblerable.swift; sourceTree = "<group>"; };
+		73959A102BC6897C00440B9C /* LanguagePickerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */,
-				73959A102BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift */,
+				73959A102BC6897C00440B9C /* LanguagePickerModuleBuilder.swift */,
 				739599FC2BC6755400440B9C /* LanguagePickerModuleDelegate.swift */,
 				738170BC2BB6C31100415B63 /* LanguagePickerModuleView.swift */,
 				738170D72BB6EEF000415B63 /* LanguagePickerModuleViewModel.swift */,
@@ -423,7 +423,7 @@
 				73959A0B2BC686C600440B9C /* SettingsModuleAssembly.swift in Sources */,
 				73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */,
 				738170E32BB6F5B700415B63 /* PackDetailsModuleModel.swift in Sources */,
-				73959A112BC6897C00440B9C /* LanguagePickerModuleBuilderAssemblerable.swift in Sources */,
+				73959A112BC6897C00440B9C /* LanguagePickerModuleBuilder.swift in Sources */,
 				738170D12BB6E48300415B63 /* GameModuleViewModel.swift in Sources */,
 				738170CF2BB6E47B00415B63 /* GameModuleBuilder.swift in Sources */,
 				73959A092BC684F200440B9C /* HomescreenModuleAssembly.swift in Sources */,

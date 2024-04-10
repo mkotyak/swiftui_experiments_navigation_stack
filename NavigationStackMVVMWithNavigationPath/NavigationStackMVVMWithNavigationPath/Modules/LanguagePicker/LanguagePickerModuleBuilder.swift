@@ -1,7 +1,7 @@
 import SwiftUI
 import Swinject
 
-struct LanguagePickerModuleBuilderAssemblerable: Assemblerable {
+struct LanguagePickerModuleBuilder: Assemblerable {
     let assembler: Assembler
 
     var assembly: Assembly? {

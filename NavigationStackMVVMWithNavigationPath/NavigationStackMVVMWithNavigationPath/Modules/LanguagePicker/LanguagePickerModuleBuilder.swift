@@ -1,9 +1,11 @@
 import SwiftUI
 
 struct LanguagePickerModuleBuilder {
-    func view() -> LanguagePickerModuleView {
+    func view(delegate: LanguagePickerModuleDelegate) -> LanguagePickerModuleView {
         LanguagePickerModuleView(
-            viewModel: StateObject(wrappedValue: LanguageModuleViewModel())
+            viewModel: StateObject(wrappedValue: LanguageModuleViewModel(
+                delegate: delegate
+            ))
         )
     }
 }

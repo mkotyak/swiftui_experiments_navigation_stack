@@ -1,6 +1,12 @@
 import Foundation
 
 final class LanguageModuleViewModel: ObservableObject {
+    private weak var delegate: LanguagePickerModuleDelegate?
+
+    init(delegate: LanguagePickerModuleDelegate) {
+        self.delegate = delegate
+    }
+
     // MARK: - Intents
 
     func viewDidSelectDeeplink() {
@@ -8,5 +14,9 @@ final class LanguageModuleViewModel: ObservableObject {
             name: .onDeeplinkOpening,
             object: nil
         )
+    }
+
+    func viewDidSelectLanguage() {
+        delegate?.languagePickerDidSubmitNewLanguage()
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GameSetupModuleView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: GameSetupModuleViewModel
 
     private let gameModuleBuilder: GameModuleBuilder
@@ -43,7 +43,7 @@ struct GameSetupModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
 

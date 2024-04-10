@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct LanguagePickerModuleView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: LanguageModuleViewModel
 
     init(viewModel: StateObject<LanguageModuleViewModel>) {
@@ -12,21 +12,11 @@ struct LanguagePickerModuleView: View {
         VStack(spacing: 20) {
             HeaderView(title: "Select Language")
 
-            languageItem(title: "Russian") {
-                debugPrint("Russian")
-            }
-            languageItem(title: "English") {
-                debugPrint("English")
-            }
-            languageItem(title: "German") {
-                debugPrint("German")
-            }
-            languageItem(title: "Italian") {
-                debugPrint("Italian")
-            }
-            languageItem(title: "Spanish") {
-                debugPrint("Spanish")
-            }
+            languageItem(title: "Russian")
+            languageItem(title: "English")
+            languageItem(title: "German")
+            languageItem(title: "Italian")
+            languageItem(title: "Spanish")
 
             Spacer()
         }
@@ -36,7 +26,7 @@ struct LanguagePickerModuleView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
 
@@ -48,11 +38,10 @@ struct LanguagePickerModuleView: View {
         }
     }
 
-    private func languageItem(
-        title: String,
-        action: @escaping () -> Void
-    ) -> some View {
-        Button(action: action) {
+    private func languageItem(title: String) -> some View {
+        Button {
+            viewModel.viewDidSelectLanguage()
+        } label: {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(.white)
                 .shadow(color: .blue, radius: 5)

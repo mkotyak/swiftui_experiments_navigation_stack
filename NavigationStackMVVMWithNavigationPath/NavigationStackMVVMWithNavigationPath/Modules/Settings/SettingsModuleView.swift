@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SettingsModuleView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: SettingsModuleViewModel
 
     private let languagePickerModuleBuilder: LanguagePickerModuleBuilder
@@ -23,16 +23,13 @@ struct SettingsModuleView: View {
         .padding(.horizontal)
         .background(Color.green.opacity(0.1))
         .navigationBarBackButtonHidden()
-        .navigationDestination(for: SettingsModuleNavigationItem.self) { item in
-            switch item {
-            case .languagePicker:
-                languagePickerModuleBuilder.view()
-            }
+        .navigationDestination(isPresented: $viewModel.isLanguagePickerDisplayed) {
+            languagePickerModuleBuilder.view(delegate: viewModel)
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 BackButton {
-                    dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
 
@@ -74,7 +71,9 @@ struct SettingsModuleView: View {
     }
 
     private var languageSettingItem: some View {
-        NavigationLink(value: SettingsModuleNavigationItem.languagePicker) {
+        Button {
+            viewModel.viewDidSelectLanguage()
+        } label: {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(.white)
                 .shadow(color: .green, radius: 5)
@@ -84,9 +83,6 @@ struct SettingsModuleView: View {
                         .font(.headline)
                         .bold()
                 }
-        }
-        .withHapticAction {
-            viewModel.viewDidSelectLanguage()
         }
     }
 }

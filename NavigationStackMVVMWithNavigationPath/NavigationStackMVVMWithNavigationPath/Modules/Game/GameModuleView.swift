@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct GameModuleView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var viewModel: GameModuleViewModel
 
     init(viewModel: StateObject<GameModuleViewModel>) {
@@ -44,7 +44,7 @@ struct GameModuleView: View {
                 return
             }
 
-            dismiss()
+            presentationMode.wrappedValue.dismiss()
         }
     }
 

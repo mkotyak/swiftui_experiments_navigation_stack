@@ -1,6 +1,17 @@
 import SwiftUI
+import Swinject
 
-struct PackDetailsModuleBuilder {
+struct PackDetailsModuleBuilder: ModuleBuilderProtocol {
+    let assembler: Assembler
+
+    var assembly: Assembly? {
+        PackDetailsModuleAssembly()
+    }
+
+    init(assembler: Assembler) {
+        self.assembler = assembler
+    }
+
     func view(
         pack: Pack,
         delegate: PackDetailsModuleDelegate

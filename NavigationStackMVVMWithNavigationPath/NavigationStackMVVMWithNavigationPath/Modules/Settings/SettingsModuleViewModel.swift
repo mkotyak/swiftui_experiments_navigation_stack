@@ -25,15 +25,3 @@ extension SettingsModuleViewModel: LanguagePickerModuleDelegate {
         isLanguagePickerDisplayed = false
     }
 }
-
-//extension SettingsModuleViewModel: Hashable {
-//    static func == (lhs: SettingsModuleViewModel, rhs: SettingsModuleViewModel) -> Bool {
-////        Unmanaged.passUnretained(lhs).toOpaque() == Unmanaged.passUnretained(rhs).toOpaque()
-//        ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-//    }
-//
-//    func hash(into hasher: inout Hasher) {
-////        hasher.combine(Unmanaged.passUnretained(self).toOpaque())
-//        hasher.combine(ObjectIdentifier(self))
-//    }
-//}

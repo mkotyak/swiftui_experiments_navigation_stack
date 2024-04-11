@@ -23,23 +23,3 @@ struct LanguagePickerModuleBuilder: ModuleBuilderProtocol {
         )
     }
 }
-//
-//extension LanguagePickerModuleBuilder: Hashable {
-//    static func == (lhs: Self, rhs: Self) -> Bool {
-//        true
-//    }
-//
-//    func hash(into hasher: inout Hasher) {
-//        hasher.combine(String(describing: self))
-//    }
-//}
-
-// struct LanguagePickerModuleBuilder {
-//    func view(delegate: LanguagePickerModuleDelegate) -> LanguagePickerModuleView {
-//        LanguagePickerModuleView(
-//            viewModel: StateObject(wrappedValue:
-//                LanguageModuleViewModel(delegate: delegate)
-//            )
-//        )
-//    }
-// }

@@ -16,18 +16,7 @@ struct HomescreenModuleBuilder: ModuleBuilderProtocol {
         HomescreenModuleView(
             viewModel: StateObject(wrappedValue: resolve(HomescreenModuleViewModel.self)!),
             settingsModuleBuilder: .init(parentAssembler: assembler),
-            gameSetupModuleBuilder: .init()
+            gameSetupModuleBuilder: .init(parentAssembler: assembler)
         )
     }
 }
-
-//
-//extension HomescreenModuleBuilder: Hashable {
-//    static func == (lhs: Self, rhs: Self) -> Bool {
-//        true
-//    }
-//
-//    func hash(into hasher: inout Hasher) {
-//        hasher.combine(String(describing: self))
-//    }
-//}

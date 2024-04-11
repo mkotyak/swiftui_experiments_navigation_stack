@@ -32,7 +32,6 @@
 		738170C52BB6DB5900415B63 /* GameSetupModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170C42BB6DB5900415B63 /* GameSetupModuleViewModel.swift */; };
 		738170C72BB6DB6100415B63 /* GameSetupModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170C62BB6DB6100415B63 /* GameSetupModuleModel.swift */; };
 		738170C92BB6DB6800415B63 /* GameSetupModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170C82BB6DB6800415B63 /* GameSetupModuleBuilder.swift */; };
-		738170CB2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170CA2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift */; };
 		738170CD2BB6E47100415B63 /* GameModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170CC2BB6E47100415B63 /* GameModuleView.swift */; };
 		738170CF2BB6E47B00415B63 /* GameModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170CE2BB6E47B00415B63 /* GameModuleBuilder.swift */; };
 		738170D12BB6E48300415B63 /* GameModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738170D02BB6E48300415B63 /* GameModuleViewModel.swift */; };
@@ -54,6 +53,10 @@
 		73959A0D2BC6877800440B9C /* LanguagePickerModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */; };
 		73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A0E2BC6880300440B9C /* DependencyAssembly.swift */; };
 		73959A112BC6897C00440B9C /* LanguagePickerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A102BC6897C00440B9C /* LanguagePickerModuleBuilder.swift */; };
+		73959A132BC7FA0E00440B9C /* GameSetupModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A122BC7FA0E00440B9C /* GameSetupModuleAssembly.swift */; };
+		73959A152BC8080E00440B9C /* GameModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A142BC8080E00440B9C /* GameModuleAssembly.swift */; };
+		73959A172BC80A9C00440B9C /* GameSetupModuleNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A162BC80A9C00440B9C /* GameSetupModuleNavigationItem.swift */; };
+		73959A192BC80BB300440B9C /* PackDetailsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73959A182BC80BB300440B9C /* PackDetailsModuleAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +86,6 @@
 		738170C42BB6DB5900415B63 /* GameSetupModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleViewModel.swift; sourceTree = "<group>"; };
 		738170C62BB6DB6100415B63 /* GameSetupModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleModel.swift; sourceTree = "<group>"; };
 		738170C82BB6DB6800415B63 /* GameSetupModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleBuilder.swift; sourceTree = "<group>"; };
-		738170CA2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleNavigationItem.swift; sourceTree = "<group>"; };
 		738170CC2BB6E47100415B63 /* GameModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleView.swift; sourceTree = "<group>"; };
 		738170CE2BB6E47B00415B63 /* GameModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleBuilder.swift; sourceTree = "<group>"; };
 		738170D02BB6E48300415B63 /* GameModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +106,10 @@
 		73959A0C2BC6877800440B9C /* LanguagePickerModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleAssembly.swift; sourceTree = "<group>"; };
 		73959A0E2BC6880300440B9C /* DependencyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyAssembly.swift; sourceTree = "<group>"; };
 		73959A102BC6897C00440B9C /* LanguagePickerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerModuleBuilder.swift; sourceTree = "<group>"; };
+		73959A122BC7FA0E00440B9C /* GameSetupModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleAssembly.swift; sourceTree = "<group>"; };
+		73959A142BC8080E00440B9C /* GameModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModuleAssembly.swift; sourceTree = "<group>"; };
+		73959A162BC80A9C00440B9C /* GameSetupModuleNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupModuleNavigationItem.swift; sourceTree = "<group>"; };
+		73959A182BC80BB300440B9C /* PackDetailsModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDetailsModuleAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,9 +255,10 @@
 		735837D82BB6B21900A3546F /* GameSetup */ = {
 			isa = PBXGroup;
 			children = (
+				73959A122BC7FA0E00440B9C /* GameSetupModuleAssembly.swift */,
 				738170C82BB6DB6800415B63 /* GameSetupModuleBuilder.swift */,
 				738170C62BB6DB6100415B63 /* GameSetupModuleModel.swift */,
-				738170CA2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift */,
+				73959A162BC80A9C00440B9C /* GameSetupModuleNavigationItem.swift */,
 				738170E42BB977FB00415B63 /* GameSetupModuleSheetType.swift */,
 				738170C22BB6DB5300415B63 /* GameSetupModuleView.swift */,
 				738170C42BB6DB5900415B63 /* GameSetupModuleViewModel.swift */,
@@ -262,6 +269,7 @@
 		735837D92BB6B22000A3546F /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				73959A142BC8080E00440B9C /* GameModuleAssembly.swift */,
 				738170CE2BB6E47B00415B63 /* GameModuleBuilder.swift */,
 				738170D22BB6E56800415B63 /* GameModuleDelegate.swift */,
 				738170CC2BB6E47100415B63 /* GameModuleView.swift */,
@@ -297,6 +305,7 @@
 		738170D92BB6F3F100415B63 /* PackDetails */ = {
 			isa = PBXGroup;
 			children = (
+				73959A182BC80BB300440B9C /* PackDetailsModuleAssembly.swift */,
 				738170DE2BB6F41B00415B63 /* PackDetailsModuleBuilder.swift */,
 				738170E02BB6F4D000415B63 /* PackDetailsModuleDelegate.swift */,
 				738170E22BB6F5B700415B63 /* PackDetailsModuleModel.swift */,
@@ -398,6 +407,8 @@
 				735837C72BB6AF0B00A3546F /* GameMode.swift in Sources */,
 				738170B92BB6BC9C00415B63 /* SettingsModuleBuilder.swift in Sources */,
 				735837DF2BB6B25100A3546F /* HomescreenModuleBuilder.swift in Sources */,
+				73959A152BC8080E00440B9C /* GameModuleAssembly.swift in Sources */,
+				73959A192BC80BB300440B9C /* PackDetailsModuleAssembly.swift in Sources */,
 				738170CD2BB6E47100415B63 /* GameModuleView.swift in Sources */,
 				738170C72BB6DB6100415B63 /* GameSetupModuleModel.swift in Sources */,
 				738170B52BB6BC8D00415B63 /* SettingsModuleView.swift in Sources */,
@@ -423,13 +434,14 @@
 				73959A0B2BC686C600440B9C /* SettingsModuleAssembly.swift in Sources */,
 				73959A0F2BC6880300440B9C /* DependencyAssembly.swift in Sources */,
 				738170E32BB6F5B700415B63 /* PackDetailsModuleModel.swift in Sources */,
+				73959A132BC7FA0E00440B9C /* GameSetupModuleAssembly.swift in Sources */,
 				73959A112BC6897C00440B9C /* LanguagePickerModuleBuilder.swift in Sources */,
 				738170D12BB6E48300415B63 /* GameModuleViewModel.swift in Sources */,
 				738170CF2BB6E47B00415B63 /* GameModuleBuilder.swift in Sources */,
 				73959A092BC684F200440B9C /* HomescreenModuleAssembly.swift in Sources */,
-				738170CB2BB6DB7000415B63 /* GameSetupModuleNavigationItem.swift in Sources */,
 				738170E12BB6F4D000415B63 /* PackDetailsModuleDelegate.swift in Sources */,
 				738170B32BB6BABF00415B63 /* View+ActionWiithHapticsViewModifier.swift in Sources */,
+				73959A172BC80A9C00440B9C /* GameSetupModuleNavigationItem.swift in Sources */,
 				738170DB2BB6F40B00415B63 /* PackDetailsModuleView.swift in Sources */,
 				738170B72BB6BC9400415B63 /* SettingsModuleViewModel.swift in Sources */,
 				735837C32BB6AEFB00A3546F /* Pack.swift in Sources */,

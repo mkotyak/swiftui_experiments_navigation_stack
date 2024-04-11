@@ -1,15 +1,29 @@
 import SwiftUI
+import Swinject
 
-struct GameModuleBuilder {
+struct GameModuleBuilder: ModuleBuilderProtocol {
+    let assembler: Assembler
+
+    var assembly: Assembly? {
+        GameModuleAssembly()
+    }
+
+    init(assembler: Assembler) {
+        self.assembler = assembler
+    }
+
     func view(
         gameSource: GameSource,
         delegate: GameModuleDelegate
     ) -> GameModuleView {
-        GameModuleView(
-            viewModel: StateObject(wrappedValue: GameModuleViewModel(
-                gameSource: gameSource,
-                delegate: delegate
-            ))
+        let viewModelAssembler = Assembler(parentAssembler: assembler)
+        viewModelAssembler.apply(assemblies: [
+            DependencyAssembly(gameSource),
+            DependencyAssembly(delegate)
+        ])
+
+        return GameModuleView(
+            viewModel: StateObject(wrappedValue: viewModelAssembler.resolver.resolve(GameModuleViewModel.self)!)
         )
     }
 }
